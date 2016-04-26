@@ -6,7 +6,7 @@ Tool to convert plasma glucose levels written in Python 2.7.6 .
 
 Menu driven program converts plasma glucose levels from:
  
-* milligram per decileter to millimole per liter (mg/dl to mmol/l),	i
+* milligram per decileter to millimole per liter (mg/dl to mmol/l),	
 * millimole per liter to milligram per decileter (mmol/l to mg/dl). 
 
 User selects between conversion types or ending program. 
