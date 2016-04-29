@@ -1,6 +1,6 @@
 # Blood sugar conversion tool 
 
-Tool to convert plasma glucose levels written in Python 2.7.6 .  
+Tool to convert plasma glucose levels written in Python 3.4.3 .  
 
 ## Usage
 
