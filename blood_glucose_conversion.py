@@ -35,8 +35,9 @@ def convert_mg_to_mmol():
 		mg_dl = float(input('Enter the plasma glucose level in mg/dl, then press Enter: '))
 		print()
 		print('*** A plasma glucose level of:',mg_dl,'mg/dl converts to:',mg_dl*0.0555,'mmol/l. ***')
-	
+		
 	except ValueError:
+		print()
 		print('*** Sorry, that\'s not a valid input. Try again. ***')
 ()
 
@@ -49,10 +50,11 @@ def convert_mmol_to_mg():
 	try: 
 		print()
 		mmol=float(input('Enter the plasma glucose level in mmol/l, then press Enter: '))
-		print('')
+		print()
 		print('*** A plasma glucose level of:',mmol,'mmo/l converts to:',mmol*18.0182,'mg/dl. ***')
 
 	except ValueError:
+		print()
 		print('*** Sorry, that\'s not a valid input. Try again. ***')
 ()
 
@@ -66,8 +68,11 @@ while loop == 1:
 	elif choice == '2': 
 		convert_mmol_to_mg()
 	elif choice == '3': 
+		print()
+		print('*** Goodbye! ***')
+		print()
 		loop = 0  
 	else: 
 		print()
 		print('*** Sorry, you must select a valid option (1,2,3), then press Enter. Try again. ***')
-	
+
