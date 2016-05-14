@@ -4,6 +4,10 @@ Tool to convert plasma glucose levels written in Python 3.4.3 .
 
 ## Usage
 
+This program can be run directly from a shell with: 
+
+`python3 blood_glucose_conversion.py` 
+
 Menu driven program converts plasma glucose levels from:
  
 * milligram per decileter to millimole per liter (mg/dl to mmol/l),	
