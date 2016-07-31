@@ -1,15 +1,29 @@
 #!/usr/bin/env python3 
 
+"""
+A menu-driven program which converts plasma glucose levels from:
+	* milligram per declieter to millimole per liter (mg/dl to mmol/l)
+        * millimole per liter to milligram per decileter (mmol/l to mg/dl)
+"""
 
-MMOL_TO_MG = 18.0182
+# Define global
+
+MMOL_TO_MG = 18.0182 			# mmol/l * 18.0182 = mg/dl 
+
+# Define functions 
 
 def convert_mmol_to_mg(x):
+    """Convert mmol/l to mg/dl equivalent"""
     return x*MMOL_TO_MG
 
-def convert_mg_to_mmol(x):
+
+def convert_mg_to_mmol(x): 
+    """Convert mg/dl to mmol/l equivalent"""
     return x/MMOL_TO_MG
 
+
 def user_float():
+    """Prompt user for input, accepting only valid input""" 
     while True:
         try:
             return float(input('Type in a number:  '))
