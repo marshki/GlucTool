@@ -19,6 +19,10 @@ Screenshot:
 
 ![Alt text](https://github.com/marshki/blood_glucose_conversion/blob/master/gluc_convert.png?raw+true "gluc_tool")
 
+#TODO: 
+
+- [ ] Add GUI
+
 ## History 
 
 First commit Apr. 22, 2016 @17:33 ET.
