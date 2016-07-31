@@ -1,6 +1,4 @@
-#!/sur/bin/env python3 
-
-#import argparse
+#!/usr/bin/env python3 
 
 
 MMOL_TO_MG = 18.0182
