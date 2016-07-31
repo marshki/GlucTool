@@ -18,7 +18,8 @@ This program is for informational purposes, and should not be used as a substitu
 ## History 
 
 First commit Apr. 22, 2016 @17:33 ET.
-Version 2.0 July 31, 2016 
+
+Version 2.0 July 31, 2016. 
 
 ## License 
 
