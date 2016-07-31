@@ -26,12 +26,13 @@ def user_float():
     """Prompt user for input, accepting only valid input""" 
     while True:
         try:
-            return float(input('Type in a number:  '))
+            return float(input('Enter the plasma glucose level you want to convert:  '))
         except ValueError:
-            print('Bad value, try again')
+            print('Bad value, try again.')
 
 
 def menu():
+    """Menu prompt for user to select program option"""
     while True:
         print('1. I want to convert a plasma glucose level from mg/dl to mmol/l.')
         print('2. I want to convert a plasma glucose level from mmol/l to mg/dl.')
@@ -42,8 +43,8 @@ def menu():
             return choice
 
 
-
 def interactive_mode():
+    """Guts of the program""" 
     while True:
         choice = menu()
         if choice == '3':
@@ -51,12 +52,12 @@ def interactive_mode():
         elif choice == '1':
             mg = user_float()
             mmol = convert_mg_to_mmol(mg)
-            print('\n{:.4f} mg/dl   =   {:.4f} mmol/l\n'.format(mg, mmol))
+            print('\n{:.4f} mg/dl   =   {:.4f} mmol/l\n'.format(mg, mmol))	# {:.4f} print to 4th decimal point
         elif choice == '2':
             mmol = user_float()
             mg = convert_mmol_to_mg(mmol)
-            print('\n{:.4f} mmol/l   =   {:.4f} mg/dl\n'.format(mmol, mg))
+            print('\n{:.4f} mmol/l   =   {:.4f} mg/dl\n'.format(mmol, mg))		
 
-print('Welcome to the GluConverter!\n')
+print('\nWelcome to the GluConverter!\n')
 interactive_mode()
-print('bye!')
+print('\nThanks for visiting!\n')
