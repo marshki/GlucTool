@@ -13,7 +13,7 @@ Menu driven program converts plasma glucose levels from:
 * milligram per decileter to millimole per liter (mg/dl to mmol/l),	
 * millimole per liter to milligram per decileter (mmol/l to mg/dl). 
 
-This program is for informational purposes, and should not be used as a substitute for qualified medical counsel. 
+__This program is for informational purposes and should not be used as a substitute for qualified medical counsel.__
 
 Screenshot: 
 
