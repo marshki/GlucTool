@@ -21,8 +21,11 @@ Screenshot:
 
 ##TODO: 
 
-- [ ] Add GUI
-
+- [ ] Add argument parsing for the CLI via `argparse`
+- [ ] Format output to table using `Pretty Table` 
+- [ ] Unit tests! 
+- [ ] Integrate `travis-ci`, and `landscape.io`
+ 
 ## History 
 
 First commit Apr. 22, 2016 @17:33 ET.
@@ -31,4 +34,4 @@ Version 2.0 July 31, 2016.
 
 ## License 
 
-MIT License. 'Nuff said. 
+[MIT License](https://opensource.org/licenses/MIT). 'Nuff said. 
