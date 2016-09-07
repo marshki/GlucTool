@@ -23,7 +23,7 @@ You can also run the menu-driven program with:
  
 __This program is for informational purposes and should not be used as a substitute for qualified medical counsel.__
 
-Screenshot: 
+Screenshots: 
 
 ![Alt text](https://github.com/marshki/blood_glucose_conversion/blob/master/gluc_convert.png?raw+true "gluc_tool")
 
