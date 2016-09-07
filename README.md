@@ -25,8 +25,9 @@ __This program is for informational purposes and should not be used as a substit
 
 Screenshots: 
 
-![Alt text](https://github.com/marshki/blood_glucose_conversion/blob/master/gluc_convert.png?raw+true "gluc_tool")
 ![Alt text](https://github.com/marshki/blood_glucose_conversion/blob/master/arg_parse.png "arg_parse_help")
+
+![Alt text](https://github.com/marshki/blood_glucose_conversion/blob/master/gluc_convert.png?raw+true "gluc_tool")
 
 ##TODO: 
 
