@@ -65,7 +65,7 @@ def menu():
             return choice
 
 def interactive_mode():
-    """Guts of the program""" 
+    """Display menu-driven options and return conversions.""" 
     while True:
         choice = menu()
         if choice == '3':
@@ -77,8 +77,12 @@ def interactive_mode():
         elif choice == '2':
             mmol = user_float()
             mg = convert_mmol_to_mg(mmol)
-            print('\n{:.4f} mmol/l   =   {:.4f} mg/dl\n'.format(mmol, mg))		
+            print('\n{:.4f} mmol/l   =   {:.4f} mg/dl\n'.format(mmol, mg))	# ""
 
+if __name__ == '__main__':
+    args = parse_cli_args()
+
+   
 
 print('\nWelcome to the GluConverter!\n')
 interactive_mode()
