@@ -82,8 +82,12 @@ def interactive_mode():
 if __name__ == '__main__':
     args = parse_cli_args()
 
-   
+    if args.mg_to_mmol:
+        conv_table(args.mg_to_mmol, convert_mg_to_mmol, 'mg/dl', 'mmol/l')
+    elif args.mmol_to_mg:
+        conve_table(args.mmol_to_mg, convert_mmol_to_mg, 'mmol/l', 'mg/dl')
+    else:    
 
-print('\nWelcome to the GluConverter!\n')
-interactive_mode()
-print('\nThanks for visiting!\n')
+    print('\nWelcome to the GluConverter!\n')
+    interactive_mode()
+    print('\nThanks for visiting!\n')
