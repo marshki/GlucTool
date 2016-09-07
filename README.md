@@ -4,15 +4,23 @@ Tool to convert plasma glucose levels written in Python 3.4.3 .
 
 ## Usage
 
-This program can be run directly from a shell with: 
+This program accepts command-line arguments, and may also be run via a text-based menu. 
+In either mode, this program converts plasma glucose levels from: 
 
-`python3 gluc_tool_2.0` 
-
-Menu driven program converts plasma glucose levels from:
- 
 * milligram per decileter to millimole per liter (mg/dl to mmol/l),	
+
 * millimole per liter to milligram per decileter (mmol/l to mg/dl). 
 
+To run this program with command line arguments: 
+
+make the program executable with: `chmod 744 gluc_tool_2.0.py`, 
+then consult the tool's help menu with: `./gluc_tool_2.0.py --help`. 
+
+You can also run the menu-driven program with: 
+
+`python3 gluc_tool_2.0`. 
+
+ 
 __This program is for informational purposes and should not be used as a substitute for qualified medical counsel.__
 
 Screenshot: 
@@ -21,8 +29,8 @@ Screenshot:
 
 ##TODO: 
 
-- [ ] Add argument parsing for the CLI via `argparse`
-- [ ] Format output to table  
+- [x] Add argument parsing for the CLI via `argparse`
+- [x] Format output to table  
 - [ ] Unit tests! 
 - [ ] Integrate `travis-ci`, and `landscape.io`
  
