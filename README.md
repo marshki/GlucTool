@@ -22,7 +22,7 @@ Screenshot:
 ##TODO: 
 
 - [ ] Add argument parsing for the CLI via `argparse`
-- [ ] Format output to table using `Pretty Table` 
+- [ ] Format output to table  
 - [ ] Unit tests! 
 - [ ] Integrate `travis-ci`, and `landscape.io`
  
