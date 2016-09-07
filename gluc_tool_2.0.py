@@ -1,9 +1,11 @@
 #!/usr/bin/env python3 
 
 """
-A menu-driven program which converts plasma glucose levels from:
+    Program converts plasma glucose levels from:
 	* milligram per declieter to millimole per liter (mg/dl to mmol/l)
-    * millimole per liter to milligram per decileter (mmol/l to mg/dl)
+    * millimole per liter to milligram per decileter (mmol/l to mg/dl). 
+
+    Program accepts CLI parsing, but can also be run as a menu-driven program. 
 """
 
 # Import argparse for command-line argument parsing 
@@ -25,11 +27,9 @@ def parse_cli_args():
     args = parser.parse_args()
     return args 
 
-
 def convert_mmol_to_mg(x):
     """Convert mmol/l to mg/dl equivalent"""
     return x*MMOL_TO_MG
-
 
 def convert_mg_to_mmol(x): 
     """Convert mg/dl to mmol/l equivalent"""
@@ -45,7 +45,6 @@ def conv_table(col1, col2_func, c1_hdr, c2_hdr):
         print('| {:10.4f} | {:10.4f} |'.format(x, y))
     print('+------------+------------+')
 
-
 def user_float():
     """Prompt user for input, accepting only valid input""" 
     while True:
@@ -53,7 +52,6 @@ def user_float():
             return float(input('Enter the plasma glucose level you want to convert:  '))
         except ValueError:
             print('Bad value, try again.')
-
 
 def menu():
     """Menu prompt for user to select program option"""
@@ -65,7 +63,6 @@ def menu():
         choice = input('Select an option (1, 2 or 3):  ')
         if choice in ('1','2','3'):
             return choice
-
 
 def interactive_mode():
     """Guts of the program""" 
