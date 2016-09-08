@@ -33,10 +33,10 @@ Screenshots:
 
 ##TODO: 
 
-- [x] Add argument parsing for the CLI via `argparse`
-- [x] Format output to table  
+- [x] Add argument parsing for the CLI via `argparse.
+- [x] Format output to table.
 - [ ] Unit tests! 
-- [ ] Integrate `travis-ci`, and `landscape.io`
+- [ ] Integrate `travis-ci`, and ~~`landscape.io`~~. 
  
 ## History 
 
