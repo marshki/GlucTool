@@ -1,5 +1,7 @@
 # Blood sugar conversion tool 
 
+[![Code Health](https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat)](https://landscape.io/github/marshki/blood_glucose_conversion/master)
+
 Tool to convert plasma glucose levels written in Python 3.4.3 .  
 
 ## Usage
