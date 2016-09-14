@@ -4,6 +4,8 @@
 
 Tool to convert plasma glucose ("blood sugar") [units](https://en.wikipedia.org/wiki/Blood_sugar#Units) written in Python 3.4.3 .  
 
+[![Requirements Status](https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master)](https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master)
+
 ## Usage
 
 This program accepts command-line arguments, and may also be run via a text-based menu. 
