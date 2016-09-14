@@ -2,9 +2,9 @@
 
 [![Code Health](https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat)](https://landscape.io/github/marshki/blood_glucose_conversion/master)
 
-Tool to convert plasma glucose ("blood sugar") [units](https://en.wikipedia.org/wiki/Blood_sugar#Units) written in Python 3.4.3 .  
-
 [![Requirements Status](https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master)](https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master)
+
+Tool to convert plasma glucose ("blood sugar") [units](https://en.wikipedia.org/wiki/Blood_sugar#Units) written in Python 3.4.3 .  
 
 ## Usage
 
