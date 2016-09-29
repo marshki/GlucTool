@@ -46,10 +46,3 @@ First commit Apr. 22, 2016 @17:33 ET.
 
 Version 2.0 July 31, 2016. 
 
-## License 
-
-[MIT License](https://opensource.org/licenses/MIT). 'Nuff said. 
-
-...
-[ci-image]: https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat 
-[ci-url]: https://landscape.io/github/marshki/blood_glucose_conversion/master
