@@ -1,7 +1,8 @@
 # Blood sugar conversion tool 
 
-[![Code Health](https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat)](https://landscape.io/github/marshki/blood_glucose_conversion/master)
+[![Code Health][ci-image][ci-url]
 
+[![Code Health](https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat)](https://landscape.io/github/marshki/blood_glucose_conversion/master)
 [![Requirements Status](https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master)](https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master)
 
 Tool to convert plasma glucose ("blood sugar") [units](https://en.wikipedia.org/wiki/Blood_sugar#Units) written in Python 3.4.3 .  
@@ -49,3 +50,7 @@ Version 2.0 July 31, 2016.
 ## License 
 
 [MIT License](https://opensource.org/licenses/MIT). 'Nuff said. 
+
+...
+[ci-image]: https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat 
+[ci-url]: https://landscape.io/github/marshki/blood_glucose_conversion/master
