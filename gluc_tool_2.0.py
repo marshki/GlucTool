@@ -1,9 +1,8 @@
 #!/usr/bin/env python3 
-
 """
     Program converts plasma glucose levels from:
     
-    * milligram per declieter to millimole per liter (mg/dl to mmol/l)
+    * milligram per decileter to millimole per liter (mg/dl to mmol/l)
     * millimole per liter to milligram per decileter (mmol/l to mg/dl). 
 
     Program accepts CLI parsing, but can also be run as a menu-driven program. 
