@@ -18,7 +18,9 @@ In either mode, this program converts plasma glucose levels from:
 To run this program with command line arguments: 
 
 make the program executable with: `chmod 744 gluc_tool_2.0.py`, 
-then consult the tool's help menu with: `./gluc_tool_2.0.py --help`. 
+then consult the tool's help menu with: `./gluc_tool_2.0.py --help`.
+
+Here's an  example: `./gluc_tool_2.0.py --mg-to-mmol {0..100}`, which will convert the numbers between 0.0 and 100.0 MG to MMOL.    
 
 You can also run the menu-driven program with: 
 
