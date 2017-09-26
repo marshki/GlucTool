@@ -41,7 +41,7 @@ Screenshots:
 - [x] Format output to table.
 - [ ] Unit tests! 
 - [ ] Integrate `travis-ci` 
-- [ ] `landscape.io` 
+- [x] `landscape.io` 
  
 ## History 
 
