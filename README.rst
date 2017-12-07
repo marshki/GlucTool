@@ -7,12 +7,12 @@ Python3 utility to convert plasma glucose ("blood sugar") units_ using argument 
  
 .. _units: https://en.wikipedia.org/wiki/Blood_sugar#Units
 
-[![Code Health](https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat)](https://landscape.io/github/marshki/blood_glucose_conversion/master)
+Code Health_.
+.. _Health https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat)](https://landscape.io/github/marshki/blood_glucose_conversion/master)
+
 [![Requirements Status](https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master)](https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
-
-Tool to convert plasma glucose ("blood sugar") [units](https://en.wikipedia.org/wiki/Blood_sugar#Units) written in Python 3.4.3 .  
-
+ 
 ## Usage
 
 This program accepts command-line arguments, and may also be run via a text-based menu. 
