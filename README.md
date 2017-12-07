@@ -1,10 +1,4 @@
-========
-GlucTool
-========
-Blood sugar conversion tool 
----------------------------
-Python3 utility to convert plasma glucose ("blood sugar") `units<https://en.wikipedia.org/wiki/Blood_sugar#Units/>`_ through command line arguments, or a menu. 
-
+# Blood sugar conversion tool 
 
 [![Code Health](https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat)](https://landscape.io/github/marshki/blood_glucose_conversion/master)
 [![Requirements Status](https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master)](https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master)
