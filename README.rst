@@ -12,14 +12,12 @@ Python3 utility to convert plasma glucose ("blood sugar") units_ using argument 
    :alt: Code Health
 
 .. image:: https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master
-     :target: https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master
-     :alt: Requirements Status
+   :target: https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master
+   :alt: Requirements Status
 
- "The MIT License":
-    prefix: "svg-mit"
-    body: '''
-      .. image:: https://img.shields.io/badge/license-MIT-${1:orange}.svg${2:?style=flat${3:-square}}
-         :target: http://opensource.org/licenses/MIT$9
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+   :target: https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE
+   : alt: MIT License
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
  
