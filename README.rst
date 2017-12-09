@@ -32,15 +32,15 @@ Usage
 -----
 Single conversion: 
 ::
-	gluc_too_2.0.py --mmol-to-mg 13.45
+	python3 gluc_tool_2.0.py --mmol-to-mg 13.45
 
 Multiple conversions: 
 ::
-	gluc_tool_2.0.py --mg-to-mmol {0..10}    
+	python3 gluc_tool_2.0.py --mg-to-mmol {0..10}    
 
-You can also run the menu-driven program with: 
-
-`python3 gluc_tool_2.0`. 
+Run the menu-driven program: 
+::
+	python3 gluc_tool_2.0.py 
 
 See also::
 	 gluc_tool_2.0.py --help.
