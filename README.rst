@@ -25,6 +25,7 @@ Requirements
 argparse_: 
 
 .. _argparse: https://pypi.python.org/pypi/argparse
+
 :: 
 	pip3 install argparse
  
@@ -51,12 +52,6 @@ Menu-driven program:
  
 __This program is for informational purposes and should not be used as a substitute for qualified medical counsel.__
 
-Screenshots: 
-
-![Alt text](https://github.com/marshki/blood_glucose_conversion/blob/master/arg_parse.png "arg_parse_help")
-
-![Alt text](https://github.com/marshki/blood_glucose_conversion/blob/master/gluc_convert.png?raw+true "gluc_tool")
-
 ##TODO: 
 
 - [x] Add argument parsing for the CLI via `argparse.
@@ -65,9 +60,11 @@ Screenshots:
 - [ ] Integrate `travis-ci` 
 - [x] `landscape.io` 
  
-## History 
+Change Log  
+----------
+Version 1.0 2016.04.22
+Version 2.0 2016.07.31 
 
-First commit Apr. 22, 2016 @17:33 ET.
-
-Version 2.0 July 31, 2016. 
-
+License
+-------
+LICENSE
