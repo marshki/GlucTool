@@ -33,6 +33,7 @@ Usage
 -----
 
 Consult the tool's help menu with::
+
 	 python3 gluc_tool_2.0.py --help.
 
 Here's an  example: `./gluc_tool_2.0.py --mg-to-mmol {0..100}`, which will convert the numbers between 0.0 and 100.0 MG to MMOL.    
