@@ -32,16 +32,15 @@ argparse_:
 Usage
 -----
 
-Consult the tool's help menu with::
-
-	 python3 gluc_tool_2.0.py --help.
-
-Here's an  example: `./gluc_tool_2.0.py --mg-to-mmol {0..100}`, which will convert the numbers between 0.0 and 100.0 MG to MMOL.    
+To: `./gluc_tool_2.0.py --mg-to-mmol {0..100}`, which will convert the numbers between 0.0 and 100.0 MG to MMOL.    
 
 You can also run the menu-driven program with: 
 
 `python3 gluc_tool_2.0`. 
 
+See also::
+
+	 gluc_tool_2.0.py --help.
  
 __This program is for informational purposes and should not be used as a substitute for qualified medical counsel.__
 
