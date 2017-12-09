@@ -17,13 +17,12 @@ Python3 utility for converting plasma glucose ("blood sugar") units_ using argum
 
 Requirements
 ~~~~~~~~~~~~
-Argparse: 
+argparse_: 
 
+.. _argparse: https://pypi.python.org/pypi/argparse
 :: 
 	
 	pip3 install argparse
-
-
  
 ## Usage
 
