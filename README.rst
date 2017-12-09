@@ -30,6 +30,12 @@ argparse_:
  
 Usage
 -----
+Synopsis: 
+::
+	[-h] [--mg-to-mmol MG_TO_MMOL [MG_TO_MMOL ...] | --mmol-to-mg MMOL_TO_MG [MMOL_TO_MG ...]]
+
+Examples
+--------
 Single conversion: 
 ::
 	python3 gluc_tool_2.0.py --mmol-to-mg 13.45
@@ -38,12 +44,10 @@ Multiple conversions:
 ::
 	python3 gluc_tool_2.0.py --mg-to-mmol {0..10}    
 
-Run the menu-driven program: 
+Menu-driven program: 
 ::
 	python3 gluc_tool_2.0.py 
 
-See also::
-	 gluc_tool_2.0.py --help.
  
 __This program is for informational purposes and should not be used as a substitute for qualified medical counsel.__
 
