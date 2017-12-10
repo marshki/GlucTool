@@ -60,6 +60,11 @@ Multiple conversions:
 Menu-driven program: 
 ::
 	python3 gluctool.py 
+
+TODO
+----
+* Unit testing 
+* Integrate TravisCI 
  
 Change Log  
 ----------
