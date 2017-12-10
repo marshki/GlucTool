@@ -1,6 +1,6 @@
-Change Log
+**Change Log**
 
-Notable changes to GlucTool
+This document records all notable changes to GlucTool. 
 
 **0.1 (2016.04.22)**
 

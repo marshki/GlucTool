@@ -63,7 +63,7 @@ Change Log
 ----------
 CHANGELOG_
 
-.. _CHANGELOG: https://github.com/marshki/blood_glucose_conversion/blob/master/CHANGELOG
+.. _CHANGELOG: https://github.com/marshki/blood_glucose_conversion/blob/master/CHANGELOG.rst
 
 License
 -------
