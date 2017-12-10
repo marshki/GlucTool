@@ -1,6 +1,6 @@
 import argparse 
-#mmol/l*18.0182=mg/dl 
-MMOL_TO_MG=18.0182			
+#mmol/l*18.0182=mg/dl
+MMOL_TO_MG=18.0182
 
 def parse_cli_args():
     """Define CLI parameters and return arguments"""
@@ -9,13 +9,13 @@ def parse_cli_args():
     group.add_argument("--mg-to-mmol", help="mg/dl to mmol/l", nargs='+', type=float)
     group.add_argument("--mmol-to-mg", help="mmol/l to mg/dl", nargs='+', type=float)
     args = parser.parse_args()
-    return args 
+    return args
 
 def convert_mmol_to_mg(x):
     """Convert mmol/l to mg/dl equivalent"""
     return x*MMOL_TO_MG
 
-def convert_mg_to_mmol(x): 
+def convert_mg_to_mmol(x):
     """Convert mg/dl to mmol/l equivalent"""
     return x/MMOL_TO_MG
 
@@ -30,7 +30,7 @@ def conv_table(col1, col2_func, c1_hdr, c2_hdr):
     print('+------------+------------+')
 
 def user_float():
-    """Prompt user for input, accepting only valid input""" 
+    """Prompt user for input, accepting only valid input"""
     while True:
         try:
             return float(input('Enter the plasma glucose level you want to convert:  '))
@@ -49,7 +49,7 @@ def menu():
             return choice
 
 def interactive_mode():
-    """Display menu-driven options and return conversions.""" 
+    """Display menu-driven options and return conversions."""
     while True:
         choice = menu()
         if choice == '3':
@@ -70,7 +70,7 @@ if __name__ == '__main__':
         conv_table(args.mg_to_mmol, convert_mg_to_mmol, 'mg/dl', 'mmol/l')
     elif args.mmol_to_mg:
         conv_table(args.mmol_to_mg, convert_mmol_to_mg, 'mmol/l', 'mg/dl')
-    else:    
+    else:
 
         print('\nWelcome to the GluConverter!\n')
         interactive_mode()
