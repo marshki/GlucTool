@@ -52,15 +52,15 @@ Examples
 --------
 Single conversion: 
 ::
-	python3 gluc_tool_2.0.py --mmol-to-mg 13.45
+	python3 gluctool.py --mmol-to-mg 13.45
 
 Multiple conversions: 
 ::
-	python3 gluc_tool_2.0.py --mg-to-mmol {0..10}    
+	python3 gluctool.py --mg-to-mmol {0..10}    
 
 Menu-driven program: 
 ::
-	python3 gluc_tool_2.0.py 
+	python3 gluctool.py 
  
 Change Log  
 ----------
