@@ -26,6 +26,7 @@ argparse_:
 
 .. _argparse: https://pypi.python.org/pypi/argparse
 
+
 :: 
 	pip3 install argparse
  
@@ -52,13 +53,6 @@ Menu-driven program:
  
 __This program is for informational purposes and should not be used as a substitute for qualified medical counsel.__
 
-##TODO: 
-
-- [x] Add argument parsing for the CLI via `argparse.
-- [x] Format output to table.
-- [ ] Unit tests! 
-- [ ] Integrate `travis-ci` 
-- [x] `landscape.io` 
  
 Change Log  
 ----------
