@@ -3,15 +3,6 @@ GlucTool
 ========
 A blood sugar conversion tool 
 -----------------------------
-Python3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
-
-In either mode, you can convert: 
-
-* milligram per decileter to millimole per liter (mg/dl to mmol/l), or 
-* millimole per liter to milligram per decileter (mmol/l to mg/dl).
-
-.. _units: https://en.wikipedia.org/wiki/Blood_sugar#Units
-
 .. image:: https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat
    :target: https://landscape.io/github/marshki/blood_glucose_conversion/master
    :alt: Code Health
@@ -19,6 +10,31 @@ In either mode, you can convert:
 .. image:: https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master
    :target: https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master
    :alt: Requirements Status
+
+Python3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
+.. _units: https://en.wikipedia.org/wiki/Blood_sugar#Units
+
+In either mode, you can convert: 
+
+* milligram per decileter to millimole per liter (mg/dl to mmol/l), or 
+* millimole per liter to milligram per decileter (mmol/l to mg/dl).
+
+and return a table of conversions, e.g: 
+
++------------+------------+
+|   mg/dl    |   mmol/l   |
++------------+------------+
+|    70.0000 |     3.8850 |
+|    71.0000 |     3.9405 |
+|    72.0000 |     3.9960 |
+|    73.0000 |     4.0515 |
+|    74.0000 |     4.1070 |
+|    75.0000 |     4.1625 |
+|    76.0000 |     4.2180 |
+|    77.0000 |     4.2735 |
+|    78.0000 |     4.3290 |
+|    79.0000 |     4.3845 |
++------------+------------+
 
 Requirements
 ------------
