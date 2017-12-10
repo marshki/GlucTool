@@ -22,11 +22,10 @@ In either mode, you can convert:
 
 Requirements
 ------------
-argparse_  
+Install argparse_ with:  
 
 .. _argparse: https://pypi.python.org/pypi/argparse
 
-install it with: 
 :: 
 	pip3 install argparse
  
