@@ -1,8 +1,6 @@
 ========
 GlucTool
 ========
-A blood sugar conversion tool 
------------------------------
 .. image:: https://landscape.io/github/marshki/blood_glucose_conversion/master/landscape.svg?style=flat
    :target: https://landscape.io/github/marshki/blood_glucose_conversion/master
    :alt: Code Health
@@ -11,6 +9,8 @@ A blood sugar conversion tool
    :target: https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master
    :alt: Requirements Status
 
+A blood sugar conversion tool 
+-----------------------------
 Python3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
 .. _units: https://en.wikipedia.org/wiki/Blood_sugar#Units
 
