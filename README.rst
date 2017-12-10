@@ -18,7 +18,7 @@ Python3 utility for converting plasma glucose ("blood sugar") units_ using argum
 In either mode, you can convert: 
 
 * milligram per decileter to millimole per liter (mg/dl to mmol/l), or 
-* millimole per liter to milligram per decileter (mmol/l to mg/dl).
+* millimole per liter to milligram per decileter (mmol/l to mg/dl),
 
 and a receive a table of the conversion, e.g: 
 
