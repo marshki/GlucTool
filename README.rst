@@ -22,7 +22,7 @@ In either mode, you can convert:
 
 Requirements
 ------------
-Install argparse_ with:  
+Install argparse with:  
 :: 
 	pip3 install argparse
  
