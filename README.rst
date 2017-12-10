@@ -20,7 +20,7 @@ In either mode, you can convert:
 * milligram per decileter to millimole per liter (mg/dl to mmol/l), or 
 * millimole per liter to milligram per decileter (mmol/l to mg/dl).
 
-and return a table of conversions, e.g: 
+and a receive a table of the conversion, e.g: 
 
 +------------+------------+
 |   mg/dl    |   mmol/l   |
@@ -61,10 +61,6 @@ Multiple conversions:
 Menu-driven program: 
 ::
 	python3 gluc_tool_2.0.py 
-
- 
-__This program is for informational purposes and should not be used as a substitute for qualified medical counsel.__
-
  
 Change Log  
 ----------
@@ -77,5 +73,3 @@ License
 LICENSE_
 
 .. _LICENSE: https://github.com/marshki/blood_glucose_conversion/blob/master/LICENSE
-
-
