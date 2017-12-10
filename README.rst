@@ -62,11 +62,13 @@ __This program is for informational purposes and should not be used as a substit
 Change Log  
 ----------
 CHANGELOG_
+
 .. _CHANGELOG: https://github.com/marshki/blood_glucose_conversion/blob/master/CHANGELOG
 
 License
 -------
 LICENSE_
+
 .. _LICENSE: https://github.com/marshki/blood_glucose_conversion/blob/master/LICENSE
 
 
