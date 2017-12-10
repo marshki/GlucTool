@@ -23,7 +23,6 @@ In either mode, you can convert:
 Requirements
 ------------
 argparse_: 
-
 .. _argparse: https://pypi.python.org/pypi/argparse
 
 :: 
@@ -62,12 +61,12 @@ __This program is for informational purposes and should not be used as a substit
  
 Change Log  
 ----------
-Version 1.0 2016.04.22
-
-Version 2.0 2016.07.31 
+CHANGELOG_
+.. _CHANGELOG: https://github.com/marshki/blood_glucose_conversion/blob/master/CHANGELOG
 
 License
 -------
-LICENSE_:
-
+LICENSE_
 .. _LICENSE: https://github.com/marshki/blood_glucose_conversion/blob/master/LICENSE
+
+
