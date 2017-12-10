@@ -27,7 +27,6 @@ argparse_
 .. _argparse: https://pypi.python.org/pypi/argparse
 
 install it with: 
-
 :: 
 	pip3 install argparse
  
