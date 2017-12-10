@@ -1,5 +1,3 @@
-#!/usr/bin/env python3 
-
 import argparse 
 
 #mmol/l * 18.0182 = mg/dl 
