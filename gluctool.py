@@ -6,13 +6,10 @@ GLUCTOOL
 A blood sugar conversion tool
 -----------------------------
 Convert plasma glucose levels from:
-    
 * milligram per decileter to millimole per liter (mg/dl to mmol/l)
 * millimole per liter to milligram per decileter (mmol/l to mg/dl). 
-
 via argument parsing or a menu-driven program. 
 """
-
 import argparse 
 
 MMOL_TO_MG = 18.0182 			# mmol/l * 18.0182 = mg/dl 
