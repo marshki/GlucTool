@@ -12,6 +12,7 @@ GlucTool
 A blood sugar conversion tool 
 -----------------------------
 Python3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
+
 .. _units: https://en.wikipedia.org/wiki/Blood_sugar#Units
 
 In either mode, you can convert: 
@@ -23,8 +24,9 @@ and return a table of conversions, e.g:
 
 +------------+------------+
 |   mg/dl    |   mmol/l   |
-+------------+------------+
++============+============+
 |    70.0000 |     3.8850 |
++------------+------------+
 |    71.0000 |     3.9405 |
 |    72.0000 |     3.9960 |
 |    73.0000 |     4.0515 |
