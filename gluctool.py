@@ -1,6 +1,6 @@
 import argparse
-#mmol/l*18.0182=mg/dl
-MMOL_TO_MG=18.0182
+
+MMOL_TO_MG=18.0182                               # mmol / l * 18.0182 = mg/dl
 
 def parse_cli_args():
     """Define CLI parameters and return arguments"""
