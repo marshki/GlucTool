@@ -1,25 +1,25 @@
 ========
 GlucTool
 ========
-.. image:: https://api.codacy.com/project/badge/Grade/717665e06c8e41c7b4184ad40682aed4    
+.. image:: https://api.codacy.com/project/badge/Grade/717665e06c8e41c7b4184ad40682aed4
    :target: https://www.codacy.com/app/marshki/GlucTool?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/GlucTool&amp;utm_campaign=Badge_Grade
 
 .. image:: https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master
    :target: https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master
    :alt: Requirements Status
 
-A blood sugar conversion tool 
+A blood sugar conversion tool
 -----------------------------
 Python3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
 
 .. _units: https://en.wikipedia.org/wiki/Blood_sugar#Units
 
-In either mode, you can convert: 
+In either mode, you can convert:
 
-* milligram per decileter to millimole per liter (mg/dl to mmol/l), or 
+* milligram per decileter to millimole per liter (mg/dl to mmol/l), or
 * millimole per liter to milligram per decileter (mmol/l to mg/dl),
 
-and receive a table of the conversion, e.g: 
+and receive a table of the conversion, e.g:
 
 +------------+------------+
 |   mg/dl    |   mmol/l   |
@@ -37,36 +37,36 @@ and receive a table of the conversion, e.g:
 
 Requirements
 ------------
-Install argparse with:  
-:: 
+Install argparse with:
+::
 	pip3 install argparse
- 
+
 Usage
 -----
-Synopsis: 
+Synopsis:
 ::
 	[-h] [--mg-to-mmol MG_TO_MMOL [MG_TO_MMOL ...] | --mmol-to-mg MMOL_TO_MG [MMOL_TO_MG ...]]
 
 Examples
 --------
-Single conversion: 
+Single conversion:
 ::
-	python3 gluctool.py --mmol-to-mg 13.45
+	python3 gluctool.py --mmol-to-mg 4.0515
 
-Multiple conversions: 
+Multiple conversions:
 ::
-	python3 gluctool.py --mg-to-mmol {0..10}    
+	python3 gluctool.py --mg-to-mmol 7{0..9}    
 
-Menu-driven program: 
+Menu-driven program:
 ::
-	python3 gluctool.py 
+	python3 gluctool.py
 
 TODO
 ----
-* Unit testing 
-* Integrate TravisCI 
- 
-Change Log  
+* Unit testing
+* Integrate TravisCI
+
+Change Log
 ----------
 CHANGELOG_
 
