@@ -20,7 +20,7 @@ def convert_mg_to_mmol(x):
     return x/MMOL_TO_MG
 
 def conv_table(col1, col2_func, c1_hdr, c2_hdr):
-    """ Return conversions in two-column tabular format."""
+    """Return conversions in two-column tabular format."""
     print('+------------+------------+')
     print('| {:^10} | {:^10} |'.format(c1_hdr, c2_hdr))
     print('+------------+------------+')
