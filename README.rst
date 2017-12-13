@@ -9,7 +9,7 @@ GlucTool
    :alt: Requirements Status
 
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
-  :target: 
+  :target: https://opensource.org/licenses/MIT
 
 A blood sugar conversion tool
 -----------------------------
