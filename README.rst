@@ -8,6 +8,9 @@ GlucTool
    :target: https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master
    :alt: Requirements Status
 
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+  :target: 
+
 A blood sugar conversion tool
 -----------------------------
 Python3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
@@ -55,7 +58,7 @@ Single conversion:
 
 Multiple conversions:
 ::
-	python3 gluctool.py --mg-to-mmol 7{0..9}    
+	python3 gluctool.py --mg-to-mmol 7{0..9}
 
 Menu-driven program:
 ::
