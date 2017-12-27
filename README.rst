@@ -4,9 +4,9 @@ GlucTool
 .. image:: https://api.codacy.com/project/badge/Grade/717665e06c8e41c7b4184ad40682aed4
    :target: https://www.codacy.com/app/marshki/GlucTool?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/GlucTool&amp;utm_campaign=Badge_Grade
 
-.. image:: https://requires.io/github/marshki/blood_glucose_conversion/requirements.svg?branch=master
-   :target: https://requires.io/github/marshki/blood_glucose_conversion/requirements/?branch=master
-   :alt: Requirements Status
+.. image:: https://requires.io/github/marshki/GlucTool/requirements.svg?branch=master
+     :target: https://requires.io/github/marshki/GlucTool/requirements/?branch=master
+     :alt: Requirements Status
 
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
   :target: https://opensource.org/licenses/MIT
