@@ -79,4 +79,4 @@ License
 -------
 LICENSE_
 
-.. _LICENSE: https://github.com/marshki/blood_glucose_conversion/blob/master/LICENSE
+.. _LICENSE: https://github.com/marshki/blood_glucose_conversion/blob/master/LICENSE.txt
