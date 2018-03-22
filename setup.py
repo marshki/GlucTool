@@ -4,7 +4,8 @@ setup(
   packages = ['GlucTool'], 
   version = '0.1',
   description = 'Python 3 utility for converting plasma glucose ("blood sugar") units.',
-  author = 'marshki',
+  author = 'Marshall J. Krinitz',
+  author_email = 'marshall@morethantomorrow.org'
   url = 'https://github.com/marshki/GlucTool',
   keywords = ['blood sugar', 'glucose', 'conversion', 'utility'], 
   classifiers = [],
