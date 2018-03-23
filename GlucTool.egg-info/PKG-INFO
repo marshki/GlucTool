@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: GlucTool
+Version: 0.1
+Summary: Utility for converting plasma glucose ("blood sugar") units.
+Home-page: https://github.com/marshki/GlucTool
+Author: Marshall J. Krinitz
+Author-email: marshall[at]morethantomorrow.org
+License: MIT
+Download-URL: https://github.com/marshki/GlucTool/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: blood sugar,glucose,conversion,utilitymgmmol
+Platform: UNKNOWN
