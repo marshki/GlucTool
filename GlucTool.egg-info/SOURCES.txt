@@ -1,8 +1,0 @@
-README.rst
-setup.py
-GlucTool/__init__.py
-GlucTool/gluctool.py
-GlucTool.egg-info/PKG-INFO
-GlucTool.egg-info/SOURCES.txt
-GlucTool.egg-info/dependency_links.txt
-GlucTool.egg-info/top_level.txt
