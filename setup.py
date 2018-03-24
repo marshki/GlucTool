@@ -11,7 +11,5 @@ setup(
   download_url = 'https://github.com/marshki/GlucTool/archive/0.1.tar.gz',
   license = 'MIT',
   keywords = ['blood sugar', 'glucose', 'conversion', 'utility' 'mg' 'mmol'], 
-  install_requires=['argparse',
-  ]
-
+  install_requires=['argparse'],
 )
