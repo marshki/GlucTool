@@ -6,7 +6,7 @@ setup(
   packages = ['GlucTool'], 
   description = 'Utility for converting plasma glucose ("blood sugar") units.',
   author = 'Marshall J. Krinitz',
-  author_email = 'marshall[at]morethantomorrow.org',
+  author_email = 'mjk235@nyu.edu',
   url = 'https://github.com/marshki/GlucTool',
   download_url = 'https://github.com/marshki/GlucTool/archive/0.1.tar.gz',
   license = 'MIT',
