@@ -1,4 +1,4 @@
-from setuptools import setup 
+from distutis.core import setup 
 
 setup(
   name = 'GlucTool',
