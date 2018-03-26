@@ -1,10 +1,11 @@
-from distutils.core import setup 
+from setuptools import setup, find_packages 
 
 setup(
-  name = 'GlucTool',
+  name='GlucTool',
   version='0.1.0',
-  packages = ['GlucTool'], 
-  description = 'Utility for converting plasma glucose ("blood sugar") units.',
+  description='Utility for converting plasma glucose ("blood sugar") units.',
+  long_description=  
+packages = ['GlucTool'], 
   author = 'Marshall J. Krinitz',
   author_email = 'mjk235@nyu.edu',
   url = 'https://github.com/marshki/GlucTool',
