@@ -4,12 +4,15 @@ GlucTool
 .. image:: https://api.codacy.com/project/badge/Grade/717665e06c8e41c7b4184ad40682aed4
    :target: https://www.codacy.com/app/marshki/GlucTool?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/GlucTool&amp;utm_campaign=Badge_Grade
 
-.. image:: https://requires.io/github/marshki/GlucTool/requirements.svg?branch=master
-     :target: https://requires.io/github/marshki/GlucTool/requirements/?branch=master
-     :alt: Requirements Status
+.. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
+   :target: https://www.python.org/
 
-.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
-  :target: https://opensource.org/licenses/MIT
+.. image:: https://requires.io/github/marshki/GlucTool/requirements.svg?branch=master
+   :target: https://requires.io/github/marshki/GlucTool/requirements/?branch=master
+   :alt: Requirements Status
+
+.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+   :target: https://lbesson.mit-license.org/
 
 A blood sugar conversion tool
 -----------------------------
