@@ -1,6 +1,6 @@
 import argparse
 
-MMOL_TO_MG=18.0182                               # mmol / l * 18.0182 = mg/dl
+MMOL_TO_MG = 18.0182                               # mmol / l * 18.0182 = mg/dl
 
 def parse_cli_args():
     """Define CLI parameters and return arguments"""
@@ -45,7 +45,7 @@ def menu():
         print('3. I want to quit.')
         print()
         choice = input('Select an option (1, 2 or 3):  ')
-        if choice in ('1','2','3'):
+        if choice in ('1', '2', '3'):
             return choice
 
 def interactive_mode():
@@ -57,7 +57,8 @@ def interactive_mode():
         elif choice == '1':
             mg = user_float()
             mmol = convert_mg_to_mmol(mg)
-            print('\n{:.4f} mg/dl   =   {:.4f} mmol/l\n'.format(mg, mmol))	# {:.4f} print to 4th decimal point
+            print('\n{:.4f} mg/dl   =   {:.4f} mmol/l\n'.format(mg, mmol))
+            # {:.4f} print to 4th decimal point
         elif choice == '2':
             mmol = user_float()
             mg = convert_mmol_to_mg(mmol)
