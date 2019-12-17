@@ -38,8 +38,8 @@ def conv_table(col1, col2_func, c1_hdr, c2_hdr):
     print('| {:^10} | {:^10} |'.format(c1_hdr, c2_hdr))
     print('+------------+------------+')
     for x_value in col1:
-        y = col2_func(x_value)
-        print('| {:10.4f} | {:10.4f} |'.format(x_value, y))
+        y_value = col2_func(x_value)
+        print('| {:10.4f} | {:10.4f} |'.format(x_value, y_value))
     print('+------------+------------+')
 
 def user_float():
