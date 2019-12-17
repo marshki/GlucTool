@@ -20,15 +20,15 @@ def parse_cli_args():
     args = parser.parse_args()
     return args
 
-def convert_mmol_to_mg(x):
+def convert_mmol_to_mg(x_value):
     """Convert mmol/l to mg/dl equivalent
     """
-    return x*MMOL_TO_MG
+    return x_value*MMOL_TO_MG
 
-def convert_mg_to_mmol(x):
+def convert_mg_to_mmol(x_value):
     """Convert mg/dl to mmol/l equivalent
     """
-    return x/MMOL_TO_MG
+    return x_value/MMOL_TO_MG
 
 def conv_table(col1, col2_func, c1_hdr, c2_hdr):
     """Return conversions in two-column tabular format.
@@ -37,9 +37,9 @@ def conv_table(col1, col2_func, c1_hdr, c2_hdr):
     print('+------------+------------+')
     print('| {:^10} | {:^10} |'.format(c1_hdr, c2_hdr))
     print('+------------+------------+')
-    for x in col1:
-        y = col2_func(x)
-        print('| {:10.4f} | {:10.4f} |'.format(x, y))
+    for x_value in col1:
+        y = col2_func(x_value)
+        print('| {:10.4f} | {:10.4f} |'.format(x_value, y))
     print('+------------+------------+')
 
 def user_float():
