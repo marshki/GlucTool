@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-"""Command line utility to convert blood glucose levels between Intl. and US standards:
-Millimoles Per Litre (mmol/l) --> mmol/l * 18.0182 = mg/dl
-Milligrams Per Decileter (mg/dl) --> mg/dl / 18.0182 = mmol/l
+"""Utility to convert blood glucose levels between Intl. and US standards.
 """
 
 import argparse
@@ -10,7 +8,7 @@ import argparse
 MMOL_TO_MG = 18.0182
 
 def parse_cli_args():
-    """Define CLI parameters and return arguments.
+    """Define parser w/arguments.
     """
 
     parser = argparse.ArgumentParser()
@@ -21,17 +19,17 @@ def parse_cli_args():
     return args
 
 def convert_mmol_to_mg(x_value):
-    """Convert mmol/l to mg/dl equivalent
+    """Convert mmol/l to mg/dl equivalent.
     """
     return x_value*MMOL_TO_MG
 
 def convert_mg_to_mmol(x_value):
-    """Convert mg/dl to mmol/l equivalent
+    """Convert mg/dl to mmol/l equivalent.
     """
     return x_value/MMOL_TO_MG
 
 def conv_table(col1, col2_func, c1_hdr, c2_hdr):
-    """Return conversions in two-column tabular format.
+    """Formatted table with (2) columns and (2) headers.
     """
 
     print('+------------+------------+')
@@ -43,30 +41,39 @@ def conv_table(col1, col2_func, c1_hdr, c2_hdr):
     print('+------------+------------+')
 
 def user_float():
-    """Prompt user for input, accepting only valid input.
+    """User-defined floating point int.
+    Args: Value to convert.
+    Returns: Floating point int.
+    Raises: ValueError.
     """
 
     while True:
         try:
-            return float(input('Enter the plasma glucose level you want to convert:  '))
+            return float(input('Enter plasma glucose level to convert:  '))
         except ValueError:
             print('Bad value, try again.')
 
 def menu():
-    """Menu prompt for user to select program option.
+    """Menu prompt.
+    Args: User-defined input.
+    Returns: Choice if arg in: 1, 2, or 3.
+    Raises:
     """
 
     while True:
-        print('1. I want to convert a plasma glucose level from mg/dl to mmol/l.')
-        print('2. I want to convert a plasma glucose level from mmol/l to mg/dl.')
-        print('3. I want to quit.')
+        print('1. Convert plasma glucose level from mg/dl to mmol/l.')
+        print('2. Convert plasma glucose level from mmol/l to mg/dl.')
+        print('3. Quit.')
         print()
         choice = input('Select an option (1, 2 or 3):  ')
         if choice in ('1', '2', '3'):
             return choice
 
 def interactive_mode():
-    """Display menu-driven options and return conversions.
+    """Interactive mode.
+    Args: User-defined input.
+    Returns: Converted float({:.4f} print to 4th decimal point).
+    Raises:
     """
 
     while True:
@@ -77,7 +84,6 @@ def interactive_mode():
             mg = user_float()
             mmol = convert_mg_to_mmol(mg)
             print('\n{:.4f} mg/dl   =   {:.4f} mmol/l\n'.format(mg, mmol))
-            # {:.4f} print to 4th decimal point
         elif choice == '2':
             mmol = user_float()
             mg = convert_mmol_to_mg(mmol)
