@@ -17,7 +17,7 @@ class ConversionTest(unittest.TestCase):
     """
 
     def test_convert_mmol_to_mg(self):
-        """Valid return value.
+        """Valid return values.
         """
         self.assertEqual(round(convert_mmol_to_mg(5), 4), 90.0910)
         self.assertEqual(round(convert_mmol_to_mg(10), 4), 180.1820)
