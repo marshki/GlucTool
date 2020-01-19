@@ -3,7 +3,7 @@
 """Unit testing class.
 """
 
-choice = '1'
+choice = '2'
 
 def interactive_mode():
     """Interactive mode.
@@ -21,8 +21,11 @@ def interactive_mode():
             print('\n{:.4f} mg/dl   =   {:.4f} mmol/l\n'.format(mg, mmol))
             break
         elif choice == '2':
-            mmol = user_float()
-            mg = convert_mmol_to_mg(mmol)
+            #mmol = user_float()
+            #mg = convert_mmol_to_mg(mmol)
+            mmol = float(10)
+            mg = (mmol/18.0182)
             print('\n{:.4f} mmol/l   =   {:.4f} mg/dl\n'.format(mmol, mg))
+            break
 
 interactive_mode()
