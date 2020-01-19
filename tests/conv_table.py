@@ -15,4 +15,4 @@ def conv_table(col1, col2_func, c1_hdr, c2_hdr):
         print('| {:10.4f} | {:10.4f} |'.format(x_value, y_value))
     print('+------------+------------+')
 
-conv_table()
+conv_table(col1, col2_func, c1_hdr, c2_hdr)
