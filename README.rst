@@ -16,7 +16,7 @@ GlucTool
 
 A blood sugar conversion tool
 -----------------------------
-Python3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
+Python 3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
 
 .. _units: https://en.wikipedia.org/wiki/Blood_sugar#Units
 
