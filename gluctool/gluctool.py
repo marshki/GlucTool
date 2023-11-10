@@ -40,19 +40,6 @@ def conv_table(col1, col2_func, c1_hdr, c2_hdr):
         print('| {:10.4f} | {:10.4f} |'.format(x_value, y_value))
     print('+------------+------------+')
 
-def user_float():
-    """User-defined floating point int.
-    Args: Value to convert.
-    Returns: Floating point int.
-    Raises: ValueError.
-    """
-
-    while True:
-        try:
-            return float(input('Enter plasma glucose level to convert:  '))
-        except ValueError:
-            print('Bad value, try again.')
-
 if __name__ == '__main__':
     cli_args = parse_cli_args()
 
