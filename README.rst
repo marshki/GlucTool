@@ -7,10 +7,6 @@ GlucTool
 .. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
    :target: https://www.python.org/
 
-.. image:: https://requires.io/github/marshki/GlucTool/requirements.svg?branch=master
-   :target: https://requires.io/github/marshki/GlucTool/requirements/?branch=master
-   :alt: Requirements Status
-
 .. image:: https://img.shields.io/badge/License-MIT-blue.svg
    :target: https://lbesson.mit-license.org/
 
