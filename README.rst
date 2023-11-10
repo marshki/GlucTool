@@ -12,11 +12,11 @@ GlucTool
 
 A blood sugar conversion tool
 -----------------------------
-Python 3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing, or a text-based menu.
+Python 3 utility for converting plasma glucose ("blood sugar") units_ using argument parsing.
 
 .. _units: https://en.wikipedia.org/wiki/Blood_sugar#Units
 
-In either mode, you can convert:
+Convert:
 
 * milligram per decileter to millimole per liter (mg/dl to mmol/l), or
 * millimole per liter to milligram per decileter (mmol/l to mg/dl),
@@ -58,10 +58,6 @@ Single conversion:
 Multiple conversions:
 ::
 	python3 gluctool.py --mg-to-mmol 7{0..9}
-
-Menu-driven program:
-::
-	python3 gluctool.py
 
 TODO
 ----
