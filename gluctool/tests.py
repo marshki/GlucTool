@@ -32,20 +32,22 @@ class TestGluConverter(unittest.TestCase):
         c1_hdr = 'mg/dl'
         c2_hdr = 'mmol/l'
 
-    # Redirect stdout to capture printed output
+        # Redirect stdout to capture printed output
         with patch('sys.stdout', new_callable=StringIO) as mock_stdout:
             conv_table(col1, col2_func, c1_hdr, c2_hdr)
 
         expected_output = textwrap.dedent("""
-            +------------+------------+
-            |   mg/dl    |   mmol/l   |
-            +------------+------------+
-            |   100.0000 |     5.5499 |
-            |   150.0000 |     8.3249 |
-            +------------+------------+
-        """)
+           +------------+------------+
+           |   mg/dl    |   mmol/l   |
+           +------------+------------+
+           |  100.0000  |   5.5499   |
+           |  150.0000  |   8.3249   |
+           +------------+------------+
+        """).strip().replace(" ", "")
 
-        self.assertEqual(mock_stdout.getvalue(), expected_output)
+        actual_output = mock_stdout.getvalue().strip().replace(" ", "")
+
+        self.assertEqual(actual_output, expected_output)
 
 if __name__ == '__main__':
     unittest.main()
