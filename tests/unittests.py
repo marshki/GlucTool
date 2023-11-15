@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import unittest
 import textwrap
 from unittest.mock import patch
