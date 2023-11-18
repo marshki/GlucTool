@@ -6,7 +6,7 @@ from unittest.mock import patch
 from io import StringIO
 from gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conv_table
 
-class TestGluConverter(unittest.TestCase):
+class TestGluctool(unittest.TestCase):
 
     def test_parse_cli_args_mg_to_mmol(self):
         with patch('sys.argv', ['script_name', '--mg-to-mmol', '100', '150']):
