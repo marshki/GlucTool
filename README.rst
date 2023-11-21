@@ -4,6 +4,9 @@ GlucTool
 .. image:: https://api.codacy.com/project/badge/Grade/717665e06c8e41c7b4184ad40682aed4
    :target: https://www.codacy.com/app/marshki/GlucTool?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/GlucTool&amp;utm_campaign=Badge_Grade
 
+.. image:: https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+   :target: https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity
+
 .. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
    :target: https://www.python.org/
 
