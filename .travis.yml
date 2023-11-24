@@ -3,7 +3,9 @@ python:
   - "3.6"
 install:
   - pip install -r requirements.txt
+script:
+  - echo $PYTHONPATH
+  - ls -R  # Display the directory structure for debugging
+  - pytest
 env:
   - PYTHONPATH=/home/travis/build/marshki/GlucTool:$PYTHONPATH
-script:
-  - pytest
