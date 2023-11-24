@@ -4,7 +4,7 @@ import unittest
 import textwrap
 from unittest.mock import patch
 from io import StringIO
-from gluctool.gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conv_table
+from Gluctool.gluctool.gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conv_table
 
 class TestGluctool(unittest.TestCase):
 
