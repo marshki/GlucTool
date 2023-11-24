@@ -3,5 +3,7 @@ python:
   - "3.6"
 install:
   - pip install -r requirements.txt
+env:
+  - PYTHONPATH=/home/travis/build/marshki/GlucTool:$PYTHONPATH
 script:
   - pytest
