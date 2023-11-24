@@ -4,8 +4,7 @@ python:
 install:
   - pip install -r requirements.txt
 script:
+  - export PYTHONPATH=$TRAVIS_BUILD_DIR
   - echo $PYTHONPATH
-  - ls -R  # Display the directory structure for debugging
+  - ls -R
   - pytest
-env:
-  - PYTHONPATH=/home/travis/build/marshki/GlucTool:$PYTHONPATH
