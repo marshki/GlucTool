@@ -1,5 +1,5 @@
 ========
-GlucTool
+GlucTool :drop_of_blood::scales:
 ========
 .. image:: https://app.travis-ci.com/marshki/GlucTool.svg?branch=master
     :target: https://app.travis-ci.com/marshki/GlucTool
