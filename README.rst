@@ -67,8 +67,9 @@ Multiple conversions:
 
 TODO
 ----
-* Unit testing
-* Integrate TravisCI
+* Upload to Python Package Index (PyPi). `For reference.`_
+
+.. _For reference: https://packaging.python.org/en/latest/tutorials/packaging-projects/  
 
 Change Log
 ----------
