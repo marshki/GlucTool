@@ -9,7 +9,7 @@ setup(
     description='Utility for converting plasma glucose ("blood sugar") units.',
     py_modules=['GlucTool'],
     author='Marshall J. Krinitz',
-    author_email='mjk235@nyu.edu',
+    author_email='marshall@morethantomorrow.org',
     url='https://github.com/marshki/GlucTool',
     download_url='https://github.com/marshki/GlucTool/archive/0.1.1.tar.gz',
     license='MIT',
