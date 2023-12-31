@@ -70,9 +70,11 @@ Multiple conversions:
 
 TODO
 ----
-* Upload to Python Package Index (PyPi). `For reference`_.
+* Upload to Python Package Index (PyPi). `For reference`_ and `more reference`.
 
 .. _For reference: https://packaging.python.org/en/latest/tutorials/packaging-projects/  
+
+.. _more reference: https://packaging.python.org/en/latest/flow/
 
 Change Log
 ----------
