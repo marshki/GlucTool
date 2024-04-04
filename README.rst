@@ -1,22 +1,30 @@
 GlucTool :drop_of_blood: :toolbox:
 ========================================================================================
-.. image:: https://app.travis-ci.com/marshki/GlucTool.svg?branch=master
+|travis| |codacy| |maintained| |python| |mit| |open source|
+
+.. |travis| image:: https://app.travis-ci.com/marshki/GlucTool.svg?branch=master
     :target: https://app.travis-ci.com/marshki/GlucTool
+    :alt: Travis
 
-.. image:: https://api.codacy.com/project/badge/Grade/717665e06c8e41c7b4184ad40682aed4
+.. |codacy| image:: https://api.codacy.com/project/badge/Grade/717665e06c8e41c7b4184ad40682aed4
    :target: https://www.codacy.com/app/marshki/GlucTool?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/GlucTool&amp;utm_campaign=Badge_Grade
+   :alt: Codacy
 
-.. image:: https://img.shields.io/badge/Maintained%3F-yes-green.svg
+.. |maintained| image:: https://img.shields.io/badge/Maintained%3F-yes-green.svg
    :target: https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity
+   :alt: Maintained
 
-.. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
+.. |python| image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
    :target: https://www.python.org/
+   :alt: Python
 
-.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+.. |mit| image:: https://img.shields.io/badge/License-MIT-blue.svg
    :target: https://lbesson.mit-license.org/
+   :alt: MIT
 
-.. image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
+.. |opern source| image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
    :target: https://github.com/ellerbrock/open-source-badges/
+   :alt: Open Source
 
 A blood sugar conversion tool
 -----------------------------
