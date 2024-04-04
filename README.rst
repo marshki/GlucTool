@@ -56,8 +56,9 @@ and receive a table of the conversion, e.g:
 Requirements
 ------------
 Install argparse with:
-::
-	pip3 install argparse
+
+.. code-block:: Python3
+    pip3 install argparse
 
 Usage
 -----
