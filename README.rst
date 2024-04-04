@@ -72,12 +72,16 @@ Synopsis:
 Examples
 --------
 Single conversion:
-::
-	python3 gluctool.py --mmol-to-mg 4.0515
+
+.. code-block:: Python3
+
+    python3 gluctool.py --mmol-to-mg 4.0515
 
 Multiple conversions:
-::
-	python3 gluctool.py --mg-to-mmol 7{0..9}
+
+.. code-block:: Python3
+
+    python3 gluctool.py --mg-to-mmol 7{0..9}
 
 TODO
 ----
