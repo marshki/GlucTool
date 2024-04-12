@@ -3,11 +3,15 @@
 """Unit testing class for gluctool.
 """
 
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import unittest
 import textwrap
 from unittest.mock import patch
 from io import StringIO
-from gluctool.gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conv_table
+from gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conv_table
 
 class TestGluctool(unittest.TestCase):
 
