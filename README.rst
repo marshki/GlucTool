@@ -19,7 +19,7 @@ GlucTool :drop_of_blood: :toolbox:
    :alt: Python
 
 .. |mit| image:: https://img.shields.io/badge/License-MIT-blue.svg
-   :target: https://lbesson.mit-license.org/
+   :target: https://opensource.org/license/MIT   
    :alt: MIT
 
 .. |opern source| image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
