@@ -22,7 +22,7 @@ GlucTool :drop_of_blood: :toolbox:
    :target: https://opensource.org/license/MIT   
    :alt: MIT
 
-.. |opern source| image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
+.. |open source| image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
    :target: https://github.com/ellerbrock/open-source-badges/
    :alt: Open Source
 
