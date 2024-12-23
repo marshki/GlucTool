@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-"""Argument parser to convert blood glucose levels between Intl. and US standards.
+"""An argument parser to convert blood glucose levels between
+International (mmol/l) and US (mg/dl) standards.
 """
 
 import argparse
