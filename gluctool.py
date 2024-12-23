@@ -46,13 +46,13 @@ def conversion_table(values, conversion_func, from_unit, to_unit):
         from_unit (str): Unit of input values.
         to_unit (str): Unit of output values.
     """
-    print(f'+------------+------------+')
+    print('+------------+------------+')
     print(f'| {from_unit:^10} | {to_unit:^10} |')
-    print(f'+------------+------------+')
+    print('+------------+------------+')
     for value in values:
         converted_value = conversion_func(value)
         print(f'| {value:10.4f} | {converted_value:10.4f} |')
-    print(f'+------------+------------+')
+    print('+------------+------------+')
 
 def main():
     args = parse_cli_args()
