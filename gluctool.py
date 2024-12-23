@@ -9,7 +9,9 @@ import argparse
 MMOL_TO_MG_CONVERSION_FACTOR = 18.0182
 
 def parse_cli_args():
-    """Define parser w/arguments.
+    """Define argument parser w/mutually exclusive arguments to convert.
+    Returns:
+        argparse.Namespace: Parsed command line arguments.
     """
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group()
