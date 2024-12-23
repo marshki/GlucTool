@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-"""Unit testing class for gluctool.
+"""
+Unit testing class for gluctool.
 """
 
 import os
@@ -12,15 +13,17 @@ from unittest.mock import patch
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conv_table
+from gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conversion_table
 
 class TestGluctool(unittest.TestCase):
 
-    """Unit tests.
+    """
+    Unit tests.
     """
 
     def test_parse_cli_args_mg_to_mmol(self):
-        """Test argument parser.
+        """
+        Test argument parser.
         """
         with patch('sys.argv', ['script_name', '--mg-to-mmol', '100', '150']):
             args = parse_cli_args()
@@ -28,7 +31,8 @@ class TestGluctool(unittest.TestCase):
         self.assertIsNone(args.mmol_to_mg)
 
     def test_parse_cli_args_mmol_to_mg(self):
-        """Test argument parser.
+        """
+        Test argument parser.
         """
         with patch('sys.argv', ['script_name', '--mmol-to-mg', '5.5', '6.0']):
             args = parse_cli_args()
@@ -36,19 +40,22 @@ class TestGluctool(unittest.TestCase):
         self.assertIsNone(args.mg_to_mmol)
 
     def test_convert_mmol_to_mg(self):
-        """Test conversion.
+        """
+        Test conversion.
         """
         result = convert_mmol_to_mg(5.0)
-        self.assertAlmostEqual(result, 90.091)
+        self.assertAlmostEqual(result, 90.091, places=3)
 
     def test_convert_mg_to_mmol(self):
-        """Test conversion.
+        """
+        Test conversion.
         """
         result = convert_mg_to_mmol(90.091)
-        self.assertAlmostEqual(result, 5.0)
+        self.assertAlmostEqual(result, 5.0, places=3)
 
-    def test_conv_table(self):
-        """Test table output.
+    def test_conversion_table(self):
+        """
+        Test table output.
         """
         col1 = [100, 150]
         col2_func = convert_mg_to_mmol
@@ -57,7 +64,7 @@ class TestGluctool(unittest.TestCase):
 
         # Redirect stdout to capture printed output
         with patch('sys.stdout', new_callable=StringIO) as mock_stdout:
-            conv_table(col1, col2_func, c1_hdr, c2_hdr)
+            conversion_table(col1, col2_func, c1_hdr, c2_hdr)
 
         expected_output = textwrap.dedent("""
            +------------+------------+
