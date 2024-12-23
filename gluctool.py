@@ -20,31 +20,47 @@ def parse_cli_args():
     group.add_argument("--mmol-to-mg", help="mmol/l to mg/dl", nargs='+', type=float)
     return parser.parse_args()
 
-def convert_mmol_to_mg(x_value):
-    """Convert mmol/l to mg/dl equivalent.
+def convert_mmol_to_mg(mmol_value):
+    """Convert mmol/l to mg/dl.
+    Args:
+        mmol_value (float): Glucose level in mmol/l.
+    Returns:
+        float: Glucose level in mg/dl.
     """
-    return x_value*MMOL_TO_MG_CONVERSION_FACTOR
+    return mmol_value * MMOL_TO_MG_CONVERSION_FACTOR
 
-def convert_mg_to_mmol(x_value):
-    """Convert mg/dl to mmol/l equivalent.
-    """
-    return x_value/MMOL_TO_MG_CONVERSION_FACTOR
+def convert_mg_to_mmol(mg_value):
+    """Convert mg/dl to mmol/l.
+    Args:
+        mg_value (float): Glucose level in mg/dl.
+    Returns:
+        float: Glucose level in mmol/l.
+"""
+    return mg_value / MMOL_TO_MG_CONVERSION_FACTOR
 
-def conv_table(col1, col2_func, c1_hdr, c2_hdr):
-    """Formatted table with (2) columns and (2) headers.
+def conversion_table(values, conversion_func, from_unit, to_unit):
+    """Print a formatted table of converted glucose values.
+    Args:
+        values (list of float): List of glucose values to convert.
+        conversion_func (function): Conversion.
+        from_unit (str): Unit of input values.
+        to_unit (str): Unit of output values.
     """
     print('+------------+------------+')
-    print('| {:^10} | {:^10} |'.format(c1_hdr, c2_hdr))
+    print('| {:^10} | {:^10} |'.format(from_unit, to_unit))
     print('+------------+------------+')
-    for x_value in col1:
-        y_value = col2_func(x_value)
-        print('| {:10.4f} | {:10.4f} |'.format(x_value, y_value))
+    for value in values:
+        converted_value = conversion_func(value)
+        print('| {:10.4f} | {:10.4f} |'.format(value, converted_value))
     print('+------------+------------+')
+
+def main():
+    args = parse_cli_args()
+
+    if args.mg_to_mmol:
+        conversion_table(args.mg_to_mmol, convert_mg_to_mmol, 'mg/dl', 'mmol/l')
+    elif args.mmol_to_mg:
+        conversion_table(args.mmol_to_mg, convert_mmol_to_mg, 'mmol/l', 'mg/dl')
 
 if __name__ == '__main__':
-    cli_args = parse_cli_args()
-
-    if cli_args.mg_to_mmol:
-        conv_table(cli_args.mg_to_mmol, convert_mg_to_mmol, 'mg/dl', 'mmol/l')
-    if cli_args.mmol_to_mg:
-        conv_table(cli_args.mmol_to_mg, convert_mmol_to_mg, 'mmol/l', 'mg/dl')
+    main()
