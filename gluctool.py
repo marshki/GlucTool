@@ -13,12 +13,12 @@ def parse_cli_args():
     Returns:
         argparse.Namespace: Parsed command line arguments.
     """
-    parser = argparse.ArgumentParser()
-    group = parser.add_mutually_exclusive_group()
+    parser = argparse.ArgumentParser(description= \
+        "Convert blood glucose levels between mmol/l and mg/dl.")
+    group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--mg-to-mmol", help="mg/dl to mmol/l", nargs='+', type=float)
     group.add_argument("--mmol-to-mg", help="mmol/l to mg/dl", nargs='+', type=float)
-    args = parser.parse_args()
-    return args
+    return parser.parse_args()
 
 def convert_mmol_to_mg(x_value):
     """Convert mmol/l to mg/dl equivalent.
