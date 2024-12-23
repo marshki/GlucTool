@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-"""An argument parser to convert blood glucose levels between
-International (mmol/l) and US (mg/dl) standards.
+"""Arg parser converts blood glucose levels btwn. Intl. (mmol/l) and US (mg/dl) stnds.
 """
 
 import argparse
@@ -35,7 +34,7 @@ def convert_mg_to_mmol(mg_value):
         mg_value (float): Glucose level in mg/dl.
     Returns:
         float: Glucose level in mmol/l.
-"""
+    """
     return mg_value / MMOL_TO_MG_CONVERSION_FACTOR
 
 def conversion_table(values, conversion_func, from_unit, to_unit):
@@ -55,6 +54,9 @@ def conversion_table(values, conversion_func, from_unit, to_unit):
     print('+------------+------------+')
 
 def main():
+    """Main function to parse command line arguments and print the conversion table
+    for blood glucose levels.
+    """
     args = parse_cli_args()
 
     if args.mg_to_mmol:
