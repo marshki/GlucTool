@@ -6,12 +6,11 @@ International (mmol/l) and US (mg/dl) standards.
 
 import argparse
 
-MMOL_TO_MG = 18.0182
+MMOL_TO_MG_CONVERSION_FACTOR = 18.0182
 
 def parse_cli_args():
     """Define parser w/arguments.
     """
-
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--mg-to-mmol", help="mg/dl to mmol/l", nargs='+', type=float)
@@ -22,17 +21,16 @@ def parse_cli_args():
 def convert_mmol_to_mg(x_value):
     """Convert mmol/l to mg/dl equivalent.
     """
-    return x_value*MMOL_TO_MG
+    return x_value*MMOL_TO_MG_CONVERSION_FACTOR
 
 def convert_mg_to_mmol(x_value):
     """Convert mg/dl to mmol/l equivalent.
     """
-    return x_value/MMOL_TO_MG
+    return x_value/MMOL_TO_MG_CONVERSION_FACTOR
 
 def conv_table(col1, col2_func, c1_hdr, c2_hdr):
     """Formatted table with (2) columns and (2) headers.
     """
-
     print('+------------+------------+')
     print('| {:^10} | {:^10} |'.format(c1_hdr, c2_hdr))
     print('+------------+------------+')
