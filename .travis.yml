@@ -2,7 +2,7 @@ language: python
 python:
   - "3.8"
 install:
-  - pip install build wheel pytest 
-  - python -m build 
+  - pip install wheel pytest
+  - pip install -e . 
 script:
   - python -m pytest
