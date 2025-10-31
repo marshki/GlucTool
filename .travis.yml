@@ -1,8 +1,14 @@
 language: python
 python:
-  - "3.8"
+- '3.8'
 install:
-  - pip install wheel pytest
-  - pip install -e . 
+- pip install wheel pytest
+- pip install -e .
 script:
-  - python -m pytest
+- python -m pytest
+deploy:
+  provider: pypi
+  username: "__token__"
+  server: https://test.pypi.org/legacy/
+  password:
+    secure: REMOVED=
