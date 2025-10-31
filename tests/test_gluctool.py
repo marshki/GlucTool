@@ -11,8 +11,12 @@ import textwrap
 import unittest
 from unittest.mock import patch
 
-from gluctool.gluctool import parse_cli_args, convert_mmol_to_mg, 
-convert_mg_to_mmol, conversion_table
+from gluctool.gluctool import (
+    parse_cli_args,
+    convert_mmol_to_mg,
+    convert_mg_to_mmol,
+    conversion_table
+)
 
 class TestGluctool(unittest.TestCase):
 
