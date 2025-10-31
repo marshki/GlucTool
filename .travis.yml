@@ -13,5 +13,5 @@ deploy:
   server: https://test.pypi.org/legacy/
   password:
     secure: REMOVED=
-    skip_install: true
-    skip_cleanup: true
+  skip_install: true
+  skip_cleanup: true
