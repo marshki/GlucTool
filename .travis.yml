@@ -6,6 +6,11 @@ install:
 - pip install -e .
 script:
 - python -m pytest
+before_deploy:
+# Use 'pip install' to ensure the necessary modern build tools are available.
+# This step is critical because the native 'pypi' provider doesn't always 
+# install these in the deployment environment.
+- pip install setuptools>=61.0.0 wheel build
 deploy:
   provider: pypi
   repository: https://test.pypi.org/legacy/
