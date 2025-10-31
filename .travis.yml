@@ -6,13 +6,10 @@ install:
 - pip install -e .
 script:
 - python -m pytest
-before_deploy:
-- pip install twine build
-- python -m build
 deploy:
   provider: pypi
   username: "__token__"
   server: https://test.pypi.org/legacy/
   password:
     secure: REMOVED=
-  skip_cleanup: true
+    skip_cleanup: true
