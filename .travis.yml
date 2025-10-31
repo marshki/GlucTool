@@ -7,15 +7,13 @@ install:
 script:
 - python -m pytest
 before_deploy:
-# Use 'pip install' to ensure the necessary modern build tools are available.
-# This step is critical because the native 'pypi' provider doesn't always 
-# install these in the deployment environment.
-- pip install setuptools>=61.0.0 wheel build
+- pip install setuptools>=61.0.0 wheel build twine
 deploy:
-  provider: pypi
-  repository: https://test.pypi.org/legacy/
-  user: __token__
-  password: "REMOVEDMycmVS7ax4vl5EfpVLoeEI5NeDUBUZTI+Lvec2OsnjrDLan5K2YtmMwVzznsHuJQWPBa808dtTGePt9zYq+EXZuqfFvU+8kH0pNh8BHtb6Xy3jBN9crqVYljKPBU1rKsAdX9jU9h3O5EfD0P33OULres8OyvIJpDap4RRKzzqBBJB3FuGYDgXpNBrwk3yeQuBE6seL8kuIfENaWCTZV6EjF0ghqcBlguYag3WBKtB24UKHR4X2eA52E+mrtDtBvfxvSNMTuHvPG/OcCRVEK/6FuPK0Vuh8jGqycu4k9pkjwpyhChWTl8lDoDozoM10aFW9GDWeKur0w2YH4bkr1YA+kwIxDw0gfDYub7vC4/wgx0558XZaEaN5m4mrrT5SA0/sIVEolwFjFVG0="
+  provider: script
   skip_cleanup: true
   on:
     branch: master
+  script:
+    - python -m build
+    - ls -l dist/ 
+    - python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u __token__ -p "REMOVEDMycmVS7ax4vl5EfpVLoeEI5NeDUBUZTI+Lvec2OsnjrDLan5K2YtmMwVzznsHuJQWPBa808dtTGePt9zYq+EXZuqfFvU+8kH0pNh8BHtb6Xy3jBN9crqVYljKPBU1rKsAdX9jU9h3O5EfD0P33OULres8OyvIJpDap4RRKzzqBBJB3FuGYDgXpNBrwk3yeQuBE6seL8kuIfENaWCTZV6EjF0ghqcBlguYag3WBKtB24UKHR4X2eA52E+mrtDtBvfxvSNMTuHvPG/OcCRVEK/6FuPK0Vuh8jGqycu4k9pkjwpyhChWTl8lDoDozoM10aFW9GDWeKur0w2YH4bkr1YA+kwIxDw0gfDYub7vC4/wgx0558XZaEaN5m4mrrT5SA0/sIVEolwFjFVG0="
