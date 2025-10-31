@@ -11,10 +11,8 @@ import textwrap
 import unittest
 from unittest.mock import patch
 
-# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-# from gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conversion_table
-from gluctool.gluctool import parse_cli_args, convert_mmol_to_mg, convert_mg_to_mmol, conversion_table
+from gluctool.gluctool import parse_cli_args, convert_mmol_to_mg, 
+convert_mg_to_mmol, conversion_table
 
 class TestGluctool(unittest.TestCase):
 
