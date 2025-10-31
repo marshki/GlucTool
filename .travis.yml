@@ -5,7 +5,7 @@ install:
 - pip install wheel pytest
 - pip install -e .
 script:
-- python -m pytest
+- python3 -m pytest
 before_deploy:
 - pip install setuptools>=61.0.0 wheel build twine
 deploy:
@@ -14,6 +14,10 @@ deploy:
   on:
     branch: master
   script:
-    - python -m build
-    - ls -l dist/ 
-    - python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u __token__ -p "REMOVEDMycmVS7ax4vl5EfpVLoeEI5NeDUBUZTI+Lvec2OsnjrDLan5K2YtmMwVzznsHuJQWPBa808dtTGePt9zYq+EXZuqfFvU+8kH0pNh8BHtb6Xy3jBN9crqVYljKPBU1rKsAdX9jU9h3O5EfD0P33OULres8OyvIJpDap4RRKzzqBBJB3FuGYDgXpNBrwk3yeQuBE6seL8kuIfENaWCTZV6EjF0ghqcBlguYag3WBKtB24UKHR4X2eA52E+mrtDtBvfxvSNMTuHvPG/OcCRVEK/6FuPK0Vuh8jGqycu4k9pkjwpyhChWTl8lDoDozoM10aFW9GDWeKur0w2YH4bkr1YA+kwIxDw0gfDYub7vC4/wgx0558XZaEaN5m4mrrT5SA0/sIVEolwFjFVG0="
+    - echo "--- STARTING PACKAGE BUILD ---"
+    - python3 -m build
+    - echo "--- BUILD COMPLETE. CHECKING FILES... ---"
+    - ls -l dist/ # THIS IS THE CRITICAL CHECK
+    - echo "--- STARTING TWINE UPLOAD ---"
+    - python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u __token__ -p "REMOVEDMycmVS7ax4vl5EfpVLoeEI5NeDUBUZTI+Lvec2OsnjrDLan5K2YtmMwVzznsHuJQWPBa808dtTGePt9zYq+EXZuqfFvU+8kH0pNh8BHtb6Xy3jBN9crqVYljKPBU1rKsAdX9jU9h3O5EfD0P33OULres8OyvIJpDap4RRKzzqBBJB3FuGYDgXpNBrwk3yeQuBE6seL8kuIfENaWCTZV6EjF0ghqcBlguYag3WBKtB24UKHR4X2eA52E+mrtDtBvfxvSNMTuHvPG/OcCRVEK/6FuPK0Vuh8jGqycu4k9pkjwpyhChWTl8lDoDozoM10aFW9GDWeKur0w2YH4bkr1YA+kwIxDw0gfDYub7vC4/wgx0558XZaEaN5m4mrrT5SA0/sIVEolwFjFVG0="
+    - echo "--- UPLOAD ATTEMPT COMPLETE ---"
