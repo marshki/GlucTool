@@ -11,6 +11,7 @@ deploy:
   script:
     - pip install twine build
     - python -m build
+    - ls -l dist/     # <-- THIS WILL FORCE OUTPUT OR FAILURE
     - python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u __token__ -p "REMOVED="
   skip_cleanup: true
   on:
