@@ -7,9 +7,11 @@ install:
 script:
 - python -m pytest
 deploy:
-  provider: pypi
-  username: "__token__"
-  server: https://test.pypi.org/legacy/
-  password:
-    secure: REMOVED=
-    skip_cleanup: true
+  provider: script
+  script:
+    - pip install twine build
+    - python -m build
+    - python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u __token__ -p "REMOVED="
+  skip_cleanup: true
+  on:
+    branch: main
