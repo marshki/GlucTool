@@ -1,0 +1,13 @@
+# .gitignore
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment directory
+/venv/
+
+# Artifacts from editable installs and package building
+*.egg-info/
+/dist/
+/build/
