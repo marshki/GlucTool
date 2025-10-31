@@ -14,4 +14,4 @@ deploy:
     - python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u __token__ -p "REMOVED="
   skip_cleanup: true
   on:
-    branch: main
+    branch: master
