@@ -8,7 +8,7 @@ script:
 - python -m pytest
 before_deploy:
 - pip install twine
-- python setup.py sdist bdist_wheel
+- python -m build 
 deploy:
   provider: pypi
   username: "__token__"
