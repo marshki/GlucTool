@@ -4,14 +4,15 @@ python:
 install:
 - pip install wheel pytest
 - pip install -e .
-- pip install twine
 script:
 - python -m pytest
+before_deploy:
+- pip install twine
+- python setup.py sdist bdist_wheel
 deploy:
   provider: pypi
   username: "__token__"
   server: https://test.pypi.org/legacy/
   password:
     secure: REMOVED=
-  skip_install: true
   skip_cleanup: true
