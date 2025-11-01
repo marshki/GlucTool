@@ -11,18 +11,15 @@ script:
   - python3 -m pytest
 
 before_deploy:
-  - pip install --upgrade build twine setuptools wheel
+  - pip install --upgrade setuptools wheel build twine
 
 deploy:
   provider: script
-  cleanup: false               
+  skip_cleanup: true
   on:
-    branch: master             
+    branch: master
   script:
-    - echo "--- STARTING PACKAGE BUILD ---"
     - python3 -m build
-    - echo "--- BUILD COMPLETE. CHECKING FILES ---"
-    - ls -l dist/             
-    - echo "--- STARTING TWINE UPLOAD ---"
+    - echo "--- BUILD COMPLETE ---"
+    - ls -l dist/
     - python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u __token__ -p "$TEST_PYPI_TOKEN"
-    - echo "--- UPLOAD ATTEMPT COMPLETE ---"
