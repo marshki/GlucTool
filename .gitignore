@@ -1,13 +1,18 @@
-# .gitignore
-
-# Python cache files
+# Cache
 __pycache__/
-*.pyc
+*.py[cod]
 
-# Virtual environment directory
-/venv/
-
-# Artifacts from editable installs and package building
+# Distribution / packaging
+build/
+dist/
 *.egg-info/
-/dist/
-/build/
+*.egg
+.eggs/
+
+# Test / coverage
+.coverage
+.pytest_cache/
+
+# Environments
+.env/
+.venv/
