@@ -19,6 +19,6 @@ deploy:
   on:
     branch: master
   script:
-    - python3 -m build
+    - python3 -m build --sdist --wheel
     - ls -l dist/
-    - python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u __token__ -p "$TEST_PYPI_TOKEN"
+    - python3 -m twine upload --repository-url https://pypi.org/legacy/ dist/* -u __token__ -p "$PYPI_TOKEN"
