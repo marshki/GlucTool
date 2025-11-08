@@ -79,10 +79,6 @@ Multiple conversions:
 
     python3 gluctool.py --mg-to-mmol 7{0..9}
 
-TODO
-----
-* Upload to Python Package Index (PyPi). `For reference`_ 
-
 .. _For reference: https://packaging.python.org/en/latest/tutorials/packaging-projects/  
 
 Change Log
