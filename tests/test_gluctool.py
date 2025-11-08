@@ -4,8 +4,6 @@
 Unit testing class for gluctool.
 """
 
-import os
-import sys
 from io import StringIO
 import textwrap
 import unittest
