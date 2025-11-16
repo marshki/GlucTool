@@ -79,7 +79,17 @@ Multiple conversions:
 
     python3 gluctool.py --mg-to-mmol 7{0..9}
 
-.. _For reference: https://packaging.python.org/en/latest/tutorials/packaging-projects/  
+.. _For reference: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+TODOs
+-----
+- [ ] Allow argparser_ to accept more than one element.
+
+.. _argparser: https://docs.python.org/3/library/argparse.html
+
+- [ ] Offere argument to export results to .csv_.
+
+.. _csv: https://docs.python.org/3/library/csv.html
 
 Change Log
 ----------
