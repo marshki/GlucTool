@@ -81,14 +81,11 @@ Multiple conversions:
 
 .. _For reference: https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
-TODOs
------
-- [ ] Allow argparser_ to accept more than one element.
+.. TODOs::
+   [ ] Allow argparser_ to accept more than one element.
+   [ ] Offer argument to export results to csv_.
 
 .. _argparser: https://docs.python.org/3/library/argparse.html
-
-- [ ] Offere argument to export results to .csv_.
-
 .. _csv: https://docs.python.org/3/library/csv.html
 
 Change Log
