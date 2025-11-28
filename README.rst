@@ -83,8 +83,7 @@ Multiple conversions:
 
 TODOs
 -----
-   + Allow argparser_ to accept more than one element.
-   + Offer argument to export results to csv_.
+   + Offer argument that integrates csv_ module to allow input of export of values.
 
 .. _argparser: https://docs.python.org/3/library/argparse.html
 .. _csv: https://docs.python.org/3/library/csv.html
