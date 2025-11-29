@@ -83,7 +83,7 @@ Multiple conversions:
 
 TODOs
 -----
-   + Offer argument that integrates csv_ module to allow input of export of values.
+   + Offer argument that integrates csv_ module to allow input or export of values.
 
 .. _argparser: https://docs.python.org/3/library/argparse.html
 .. _csv: https://docs.python.org/3/library/csv.html
