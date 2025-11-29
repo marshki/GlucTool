@@ -75,13 +75,13 @@ Single conversion:
 
 Multiple conversions:
 
-(Spaced arguments)
+(spaced arguments)
 
 .. code-block:: Python3
 
     python3 gluctool.py --mg-to-mmol 7.5 8.5 9.5 10 
 
-(Brace expanson)
+(brace expanson)
 
 .. code-block:: Python3
 
