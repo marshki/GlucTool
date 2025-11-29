@@ -75,7 +75,7 @@ Single conversion:
 
 Multiple conversions:
 
-(Space separated arguments)
+(Spaced arguments)
 
 .. code-block:: Python3
 
