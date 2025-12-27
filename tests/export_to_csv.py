@@ -1,5 +1,11 @@
 #!/usr/local/bin/env python
 
+"""
+Open 'scratch.csv' and write:
+a header
+a new row with the content of one (1) rown from 'rows'
+"""
+
 import csv
 
 rows = [
