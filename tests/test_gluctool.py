@@ -45,15 +45,25 @@ class TestGluctool(unittest.TestCase):
         Test conversion.
         """
         result = convert_mmol_to_mg(5.0)
-        self.assertAlmostEqual(result, 90.091, places=3)
+        self.assertAlmostEqual(result, 90.0910, places=4)
 
     def test_convert_mg_to_mmol(self):
         """
         Test conversion.
         """
-        result = convert_mg_to_mmol(90.091)
-        self.assertAlmostEqual(result, 5.0, places=3)
+        result = convert_mg_to_mmol(90.0910)
+        self.assertAlmostEqual(result, 5.0, places=4)
 
+    """
+    def test_conversion_rows(self):
+        Test rows generation.
+        rows = generate_conversion_rows(
+                [100, 150],
+                convert_mg_to_mmol,
+                "mg/dl",
+                "mmol/l"
+        ) 
+    """
     def test_conversion_table(self):
         """
         Test table output.
