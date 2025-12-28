@@ -56,14 +56,17 @@ def conversion_table(values, conversion_func, from_unit, to_unit):
         from_unit (str): Unit of input values.
         to_unit (str): Unit of output values.
     """
+    rows = conversion_rows(values, conversion_func, from_unit, to_unit)
+
     print('+------------+------------+')
     print(f'| {from_unit:^10} | {to_unit:^10} |')
     print('+------------+------------+')
-    for value in values:
-        converted_value = conversion_func(value)
-        print(f'| {value:10.4f} | {converted_value:10.4f} |')
+    
+    for row in rows:
+        print(f'| {row[from_unit]:10.4f} | {row[to_unit]:10.4f} |') 
+    
     print('+------------+------------+')
-
+ 
 def main():
     """Main function to parse command line arguments and print the conversion table
     for blood glucose levels.
