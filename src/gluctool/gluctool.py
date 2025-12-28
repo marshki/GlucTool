@@ -37,6 +37,17 @@ def convert_mg_to_mmol(mg_value):
     """
     return mg_value / MMOL_TO_MG_CONVERSION_FACTOR
 
+def conversion_rows(values, conversion_func, from_unit, to_unit):
+    """
+    """
+    rows = []
+    for value in values:
+        rows.append({
+            from_unit: round(value, 4),
+            to_unit: round(conversion_func(value),4),
+        })
+    return rows
+
 def conversion_table(values, conversion_func, from_unit, to_unit):
     """Print a formatted table of converted glucose values.
     Args:
