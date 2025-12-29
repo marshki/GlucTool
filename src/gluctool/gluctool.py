@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-"""Arg parser converts blood glucose levels btwn. Intl. (mmol/l) and US (mg/dl) stnds.
+"""Argument parser converts blood glucose levels between 
+International (mmol/l) and US (mg/dl) standards.
 """
 
 import argparse
@@ -38,8 +39,15 @@ def convert_mg_to_mmol(mg_value):
     """
     return mg_value / MMOL_TO_MG_CONVERSION_FACTOR
 
-def conversion_rows(values, conversion_func, from_unit, to_unit):
-    """Convert values in to structured rows. 
+def convert_to_rows(values, conversion_func, from_unit, to_unit):
+    """Convert glucose value(s) in to row(s) with labels. 
+    Args:
+        values (list[float]): List of glucose values to convert.
+        conversion_func (callable): Converst a single value.
+        from_unit (str): Unit of input values.
+        to_unit (str): Unit of output values.
+    Returns:
+        list[dict]: Dictionary maps units to values.
     """
     rows = []
     for value in values:
@@ -52,11 +60,10 @@ def conversion_rows(values, conversion_func, from_unit, to_unit):
 def conversion_table(values, conversion_func, from_unit, to_unit):
     """Print a formatted table of converted glucose values.
     Args:
-        values (list[float]): Glucose values.
+        values (list[float]): List of glucose values to convert.
         conversion_func (callable): Convert a single value.
         from_unit (str): Unit of input values.
         to_unit (str): Unit of converted values.
-
     Returns:
         None
     """
