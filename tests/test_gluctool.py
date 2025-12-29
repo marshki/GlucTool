@@ -13,7 +13,7 @@ from gluctool.gluctool import (
     parse_cli_args,
     convert_mmol_to_mg,
     convert_mg_to_mmol,
-    conversion_rows,
+    convert_to_rows,
     conversion_table
 )
 
@@ -55,11 +55,11 @@ class TestGluctool(unittest.TestCase):
         result = convert_mg_to_mmol(90.0910)
         self.assertAlmostEqual(result, 5.0, places=4)
 
-    def test_conversion_rows(self):
+    def test_convert_to_rows(self):
         """
         Test rows generation.
         """
-        rows = conversion_rows(
+        rows = convert_to_rows(
             [100, 150],
             convert_mg_to_mmol,
             "mg/dl",
