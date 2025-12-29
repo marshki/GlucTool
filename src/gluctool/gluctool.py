@@ -4,6 +4,7 @@
 """
 
 import argparse
+import csv
 
 MMOL_TO_MG_CONVERSION_FACTOR = 18.0182
 
@@ -38,23 +39,26 @@ def convert_mg_to_mmol(mg_value):
     return mg_value / MMOL_TO_MG_CONVERSION_FACTOR
 
 def conversion_rows(values, conversion_func, from_unit, to_unit):
-    """
+    """Convert values in to structured rows. 
     """
     rows = []
     for value in values:
         rows.append({
             from_unit: round(value, 4),
             to_unit: round(conversion_func(value),4),
-        })
+        }
     return rows
 
 def conversion_table(values, conversion_func, from_unit, to_unit):
     """Print a formatted table of converted glucose values.
     Args:
-        values (list of float): List of glucose values to convert.
-        conversion_func (function): Conversion.
+        values (list[float]): Glucose values.
+        conversion_func (callable): Convert a single value.
         from_unit (str): Unit of input values.
-        to_unit (str): Unit of output values.
+        to_unit (str): Unit of converted values.
+
+    Returns:
+        None
     """
     rows = conversion_rows(values, conversion_func, from_unit, to_unit)
 
@@ -66,7 +70,20 @@ def conversion_table(values, conversion_func, from_unit, to_unit):
         print(f'| {row[from_unit]:10.4f} | {row[to_unit]:10.4f} |') 
     
     print('+------------+------------+')
- 
+
+def export_to_csv(rows, filename):
+    """Write converted rows to a .csv file.
+    """
+    if not rows: 
+        return 
+    
+    fieldnames = rows[0].keys()
+
+    with open(filename, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fieldnames)
+        writer.writerhead()
+        writer.writerows(rows)
+
 def main():
     """Main function to parse command line arguments and print the conversion table
     for blood glucose levels.
