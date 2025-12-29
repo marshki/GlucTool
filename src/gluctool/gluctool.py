@@ -54,7 +54,7 @@ def convert_to_rows(values, conversion_func, from_unit, to_unit):
         rows.append({
             from_unit: round(value, 4),
             to_unit: round(conversion_func(value),4),
-        }
+        })
     return rows
 
 def conversion_table(values, conversion_func, from_unit, to_unit):
@@ -67,7 +67,7 @@ def conversion_table(values, conversion_func, from_unit, to_unit):
     Returns:
         None
     """
-    rows = conversion_rows(values, conversion_func, from_unit, to_unit)
+    rows = convert_to_rows(values, conversion_func, from_unit, to_unit)
 
     print('+------------+------------+')
     print(f'| {from_unit:^10} | {to_unit:^10} |')
