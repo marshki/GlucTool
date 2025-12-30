@@ -95,7 +95,6 @@ class TestGluctool(unittest.TestCase):
         """).strip().replace(" ", "")
 
         actual_output = mock_stdout.getvalue().strip().replace(" ", "")
-
         self.assertEqual(actual_output, expected_output)
 
 if __name__ == '__main__':
