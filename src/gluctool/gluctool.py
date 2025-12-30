@@ -72,23 +72,23 @@ def conversion_table(values, conversion_func, from_unit, to_unit):
     print('+------------+------------+')
     print(f'| {from_unit:^10} | {to_unit:^10} |')
     print('+------------+------------+')
-    
+
     for row in rows:
-        print(f'| {row[from_unit]:10.4f} | {row[to_unit]:10.4f} |') 
-    
+        print(f'| {row[from_unit]:10.4f} | {row[to_unit]:10.4f} |')
+
     print('+------------+------------+')
 
 def export_to_csv(rows, filename):
     """Write converted rows to a .csv file.
     """
-    if not rows: 
-        return 
-    
+    if not rows:
+        return
+
     fieldnames = rows[0].keys()
 
     with open(filename, "w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=fieldnames)
-        writer.writerhead()
+        writer.writeheader()
         writer.writerows(rows)
 
 def main():
