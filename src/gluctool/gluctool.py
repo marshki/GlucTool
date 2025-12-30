@@ -50,6 +50,7 @@ def convert_to_rows(values, conversion_func, from_unit, to_unit):
         list[dict]: Dictionary maps units to values.
     """
     rows = []
+
     for value in values:
         rows.append({
             from_unit: round(value, 4),
@@ -82,7 +83,7 @@ def export_to_csv(rows, filename):
     """Write converted rows to a .csv file.
     """
     if not rows:
-        return
+        raise ValueError("No row(s) present")
 
     fieldnames = rows[0].keys()
 
