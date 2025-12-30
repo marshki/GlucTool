@@ -14,7 +14,8 @@ from gluctool.gluctool import (
     convert_mmol_to_mg,
     convert_mg_to_mmol,
     convert_to_rows,
-    conversion_table
+    conversion_table,
+    export_to_csv
 )
 
 class TestGluctool(unittest.TestCase):
@@ -96,6 +97,12 @@ class TestGluctool(unittest.TestCase):
 
         actual_output = mock_stdout.getvalue().strip().replace(" ", "")
         self.assertEqual(actual_output, expected_output)
+
+    def test_export_to_csv_empty_rows_raises(self):
+        """Test empty row(s).
+        """
+        with self.assertRaises(ValueError):
+            export_to_csv([], "out.csv")
 
 if __name__ == '__main__':
     unittest.main()
