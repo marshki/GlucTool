@@ -3,7 +3,7 @@
 """
 Open 'scratch.csv' and write:
 a header
-a new row with the content of one (1) rown from 'rows'
+a row with the content of row from 'rows'
 """
 
 import csv
@@ -22,7 +22,7 @@ rows = [
     {"mg/dl": 200.0, "mmol/l": 11.0999},
 ]
 
-with open("scratch.csv", "w", newline="") as fh:
+with open("scratch.csv", "w", newline="", encoding='utf-8') as fh:
     writer = csv.DictWriter(fh, fieldnames=rows[0].keys())
     writer.writeheader()
     writer.writerows(rows)
