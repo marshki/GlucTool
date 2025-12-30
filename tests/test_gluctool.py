@@ -66,12 +66,12 @@ class TestGluctool(unittest.TestCase):
             "mmol/l"
         )
 
-        expected = [ 
+        expected = [
             {"mg/dl": 100.0, "mmol/l": 5.5499},
             {"mg/dl": 150.0, "mmol/l": 8.3249},
-        ] 
+        ]
         self.assertEqual(rows, expected)
-    
+
     def test_conversion_table(self):
         """
         Test table output.
