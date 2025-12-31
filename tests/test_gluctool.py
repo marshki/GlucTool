@@ -5,6 +5,8 @@ Unit testing class for gluctool.
 """
 
 from io import StringIO
+import os
+import tempfile
 import textwrap
 import unittest
 from unittest.mock import patch
@@ -103,6 +105,16 @@ class TestGluctool(unittest.TestCase):
         """
         with self.assertRaises(ValueError):
             export_to_csv([], "out.csv")
+
+    def test_export_to_csv_creates_file(self):
+        """Test rows to .csv
+        """
+        rows = [{"a": 1}]
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            outpath = os.path.join(tmpdir, "out.csv")
+            export_to_csv(rows, outpath)
+            self.assertTrue(os.path.exists(outpath))
 
 if __name__ == '__main__':
     unittest.main()
