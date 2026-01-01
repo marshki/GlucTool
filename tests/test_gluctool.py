@@ -28,7 +28,7 @@ class TestCLIParsing(unittest.TestCase):
             args = parse_cli_args()
         self.assertEqual(args.mmol_to_mg, [5.5, 6.0])
         self.assertIsNone(args.mg_to_mmol)
- 
+
     def test_parse_cli_args_mg_to_mmol(self):
         """Test argument parser.
         """
@@ -37,7 +37,7 @@ class TestCLIParsing(unittest.TestCase):
         self.assertEqual(args.mg_to_mmol, [100, 150])
         self.assertIsNone(args.mmol_to_mg)
 
-class TestConversions(unittest.TestCase):  
+class TestConversions(unittest.TestCase):
     """Unit conversion test class.
     """
 
@@ -46,14 +46,14 @@ class TestConversions(unittest.TestCase):
         """
         result = convert_mmol_to_mg(5.0)
         self.assertAlmostEqual(result, 90.0910, places=4)
-        
+
     def test_convert_mg_to_mmol(self):
         """Test conversion.
         """
         result = convert_mg_to_mmol(90.0910)
         self.assertAlmostEqual(result, 5.0, places=4)
 
-class TestRowGeneration(unittest.TestCase):    
+class TestRowGeneration(unittest.TestCase):
     """Unit row generation test class.
     """
 
