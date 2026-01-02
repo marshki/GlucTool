@@ -12,7 +12,7 @@ from gluctool.gluctool import (
     parse_cli_args,
     convert_mmol_to_mg,
     convert_mg_to_mmol,
-    convert_to_rows,
+    build_rows,
     conversion_table,
     export_to_csv
 )
@@ -30,7 +30,7 @@ class TestCLIParsing(unittest.TestCase):
         self.assertIsNone(args.mg_to_mmol)
 
     def test_parse_cli_args_mg_to_mmol(self):
-        """Test argument parser.
+        """Test arguments parser.
         """
         with patch('sys.argv', ['script_name', '--mg-to-mmol', '100', '150']):
             args = parse_cli_args()
@@ -54,14 +54,14 @@ class TestConversions(unittest.TestCase):
         self.assertAlmostEqual(result, 5.0, places=4)
 
 class TestRowGeneration(unittest.TestCase):
-    """Unit row generation test class.
+    """Row generation test class.
     """
 
-    def test_convert_to_rows(self):
+    def test_build_rows(self):
         """
-        Test row generation.
+        Test rows are generated.
         """
-        rows = convert_to_rows(
+        rows = build_rows(
             [100, 150],
             convert_mg_to_mmol,
             "mg/dl",
@@ -76,7 +76,7 @@ class TestRowGeneration(unittest.TestCase):
 
     def test_conversion_table(self):
         """
-        Test table output.
+        Test table is generated.
         """
         col1 = [100, 150]
         col2_func = convert_mg_to_mmol
@@ -100,13 +100,13 @@ class TestRowGeneration(unittest.TestCase):
         self.assertEqual(actual_output, expected_output)
 
     def test_export_to_csv_empty_rows_raises(self):
-        """Test empty row(s).
+        """Test for empty row(s).
         """
         with self.assertRaises(ValueError):
             export_to_csv([], "out.csv")
 
     def test_export_to_csv_creates_file(self):
-        """Test rows to .csv
+        """Test rows export to .csv
         """
         rows = [{"a": 1}]
 
