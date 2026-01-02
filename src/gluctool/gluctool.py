@@ -7,7 +7,7 @@ import csv
 MMOL_TO_MG_CONVERSION_FACTOR = 18.0182
 
 def parse_cli_args():
-    """Define argument parser w/mutually exclusive arguments to convert.
+    """Define parser w/mutually exclusive arguments to convert.
     Returns:
         argparse.Namespace: Parsed command line arguments.
     """
@@ -37,10 +37,10 @@ def convert_mg_to_mmol(mg_value):
     return mg_value / MMOL_TO_MG_CONVERSION_FACTOR
 
 def build_rows(values, conversion_func, from_unit, to_unit):
-    """Convert glucose value(s) in to row(s) with labels. 
+    """Convert glucose value in to rows with labels. 
     Args:
         values (list[float]): List of glucose values to convert.
-        conversion_func (callable): Converst a single value.
+        conversion_func (callable): Convert a single value.
         from_unit (str): Unit of input values.
         to_unit (str): Unit of output values.
     Returns:
@@ -90,8 +90,8 @@ def export_to_csv(rows, filename):
         writer.writerows(rows)
 
 def main():
-    """Main function to parse command line arguments and print the conversion table
-    for blood glucose levels.
+    """Main function to parse command line arguments and 
+    print the conversion table for blood glucose levels.
     """
     args = parse_cli_args()
 
