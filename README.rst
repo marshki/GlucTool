@@ -73,8 +73,9 @@ Usage
 Synopsis:
 
 .. code-block:: Python3
-   
-    [-h] [--mg-to-mmol MG_TO_MMOL [MG_TO_MMOL ...] | --mmol-to-mg MMOL_TO_MG [MMOL_TO_MG ...]]
+
+    [-h] (--mg-to-mmol MG_TO_MMOL [MG_TO_MMOL ...] | --mmol-to-mg MMOL_TO_MG [MMOL_TO_MG ...])
+    [--csv FILE]
 
 Examples
 --------
