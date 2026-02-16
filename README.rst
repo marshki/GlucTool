@@ -40,6 +40,7 @@ Convert:
 Output: 
 
 * a table of the conversion, e.g:
+
 +------------+------------+
 |   mg/dl    |   mmol/l   |
 +============+============+
@@ -53,6 +54,7 @@ Output:
 +------------+------------+
 |    74.0000 |     4.1070 |
 +------------+------------+
+
 * a csv of the conversion, e.g.: ::
 
     mg/dl,mmol/l
