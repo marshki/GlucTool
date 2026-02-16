@@ -9,6 +9,10 @@ dist/
 *.egg
 .eggs/
 
+# Editor backup files
+*~
+*.un~
+
 # Test / coverage
 .coverage
 .pytest_cache/
