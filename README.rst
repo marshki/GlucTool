@@ -53,7 +53,7 @@ Output:
 +------------+------------+
 |    74.0000 |     4.1070 |
 +------------+------------+
-* a csv of the conversion, e.g.:
+* a csv of the conversion, e.g.: ::
 
     mg/dl,mmol/l
     70.0,3.885
