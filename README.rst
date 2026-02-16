@@ -99,13 +99,11 @@ Multiple conversions:
 
     python3 gluctool.py --mg-to-mmol 7{0..9}
 
-TODOs
------
-   + Offer argument that integrates csv_ module to allow input or export of values.
-     Issue #4 in Github (branch: feature/add_csv)
+Export to csv:
 
-.. _argparser: https://docs.python.org/3/library/argparse.html
-.. _csv: https://docs.python.org/3/library/csv.html
+.. code-block:: Python3
+
+    python3 gluctool.py --mg-to-mmol 7.5 8.5 9.5 10 --csv filename
 
 Change Log
 ----------
