@@ -34,11 +34,12 @@ Python 3 utility for converting plasma glucose ("blood sugar") units_ using argu
 
 Convert:
 
-* milligram per decileter to millimole per liter (mg/dl to mmol/l), or
-* millimole per liter to milligram per decileter (mmol/l to mg/dl),
+* milligram per decileter to millimole per liter (mg/dl to mmol/l)
+* millimole per liter to milligram per decileter (mmol/l to mg/dl)
 
-and receive a table of the conversion, e.g:
+Output: 
 
+* a table of the conversion, e.g:
 +------------+------------+
 |   mg/dl    |   mmol/l   |
 +============+============+
@@ -52,6 +53,13 @@ and receive a table of the conversion, e.g:
 +------------+------------+
 |    74.0000 |     4.1070 |
 +------------+------------+
+* a csv of the conversion, e.g.:
+    mg/dl,mmol/l
+    70.0,3.885
+    71.0,3.9405
+    72.0,3.996
+    73.0,4.0515
+    74.0,4.107
 
 Requirements
 ------------
