@@ -10,10 +10,10 @@ from unittest.mock import patch
 
 from gluctool.gluctool import (
     parse_cli_args,
-    convert_mmol_to_mg,
     convert_mg_to_mmol,
+    convert_mmol_to_mg,
     build_rows,
-    conversion_table,
+    print_conversion_table,
     export_to_csv
 )
 
@@ -74,7 +74,7 @@ class TestRowGeneration(unittest.TestCase):
         ]
         self.assertEqual(rows, expected)
 
-    def test_conversion_table(self):
+    def test_print_conversion_table(self):
         """
         Test table is generated.
         """
@@ -83,9 +83,10 @@ class TestRowGeneration(unittest.TestCase):
         c1_hdr = 'mg/dl'
         c2_hdr = 'mmol/l'
 
+        rows = build_rows(col1, col2_func, c1_hdr, c2_hdr)
         # Redirect stdout to capture printed output
         with patch('sys.stdout', new_callable=StringIO) as mock_stdout:
-            conversion_table(col1, col2_func, c1_hdr, c2_hdr)
+            print_conversion_table(rows)
 
         expected_output = textwrap.dedent("""
            +------------+------------+
