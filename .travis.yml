@@ -25,4 +25,4 @@ deploy:
   script:
     - python3 -m build --sdist --wheel
     - ls -l dist/
-    - python3 -m twine upload --repository-url https://pypi.org/legacy/ dist/* -u __token__ -p "$PyPi_TOKEN"
+    - python3 -m twine upload --repository-url https://pypi.org/legacy/ dist/* -u __token__ -p "$PyPi_Token"
