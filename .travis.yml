@@ -24,7 +24,7 @@ deploy:
     branch: master
   script: |
     python3 -m build --sdist --wheel
-    echo "Validating artifacts with Twine:"
     python3 -m twine check dist/*
+    echo "Variable check: PyPi_Token is ${#PyPi_Token} characters long."
     # ls -l dist/
     # python3 -m twine upload --repository-url https://pypi.org/legacy/ dist/* -u __token__ -p "$PyPi_Token"
