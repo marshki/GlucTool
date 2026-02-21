@@ -24,4 +24,5 @@ deploy:
     branch: master
   script: |
     python3 -m build --sdist --wheel
-    python3 -m twine upload --non-interactive dist/* -u __token__ -p "$PyPi_Token"
+    python3 -m twine upload --repository testpypi --non-interactive dist/* -u __token__ -p "$Test_PyPi_Token"
+    # python3 -m twine upload --non-interactive dist/* -u __token__ -p "$PyPi_Token"
